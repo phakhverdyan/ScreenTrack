@@ -1,0 +1,216 @@
+<div class="slideup + is-user-profile">
+    <div class="slideup-background"></div>
+    <div class="slideup-content">
+        <button class="slideup__close-button btn">&times;</button>
+        <div class="slideup-content-wrapper">
+            <% if (user) { %>
+                <div class="slideup__messages <%- (user.id == auth.user.id ? 'd-none' : '') %>">
+                    <div class="message-panel">
+                        <div class="message-panel-dropzone">
+                            <span class="[ message-panel-dropzone__text ]">
+								{{ __('slideups/user_profile.drop_to_attach') }}
+							</span>
+                        </div>
+                        <div class="message-panel-content">
+                            <div class="message-panel-history">
+                                <div class="message-panel-history__items">
+                                    <button class="message-panel__load-more-button btn btn-primary + is-before d-none">
+										{{ __('slideups/user_profile.load_more_items') }}
+                                    </button>
+                                    <button class="message-panel__load-more-button btn btn-primary + is-after d-none">
+										{{ __('slideups/user_profile.load_more_items') }}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="message-panel-form">
+                            <div class="message-panel-form__wrapper">
+                                <div class="message-panel-form__typing-members"></div>
+                                <button type="button" class="[ message-panel-form__attachment-button ] btn d-none">
+                                    <img src="{{ asset_no_cache('img/paperclip.svg') }}" alt="">
+                                </button>
+                                <textarea class="message-panel-form__input" name="chat_message[text]"
+                                          placeholder="{{ __('slideups/user_profile.type_your_message') }}"></textarea>
+                                <button type="submit" class="[ message-panel-form__button ] btn btn-primary">
+									{{ __('slideups/user_profile.send') }}
+                                </button>
+                            </div>
+                            <div class="message-panel-form__attachments d-none">
+                                <div class="message-panel-attachment-item">
+                                    <div class="message-panel-attachment-item__image">txt</div>
+                                    <button class="message-panel-attachment-item__remove-button btn">&times;</button>
+                                    <span class="message-panel-attachment-item__name">Screenshot at Oct 17 04-43-48.png</span>
+                                    <span class="message-panel-attachment-item__size">14 Mb</span>
+                                    <div class="message-panel-attachment-item__progress">
+                                        <span class="" style="min-width: 30%;"></span>
+                                    </div>
+                                </div>
+                                <div class="message-panel-attachment-item">
+                                    <div class="message-panel-attachment-item__image">txt</div>
+                                    <button class="message-panel-attachment-item__remove-button btn">&times;</button>
+                                    <span class="message-panel-attachment-item__name">Screenshot at Oct 17 04-43-48.png</span>
+                                    <span class="message-panel-attachment-item__size">14 Mb</span>
+                                    <div class="message-panel-attachment-item__progress">
+                                        <span style="min-width: 30%;"></span>
+                                    </div>
+                                </div>
+                                <div class="message-panel-attachment-item">
+                                    <div class="message-panel-attachment-item__image">txt</div>
+                                    <button class="message-panel-attachment-item__remove-button btn">&times;</button>
+                                    <div class="message-panel-attachment-item__name">Screenshot at Oct 17 04-43-48.png
+                                    </div>
+                                    <div class="message-panel-attachment-item__size">14 Mb</div>
+                                    <div class="message-panel-attachment-item__progress">
+                                        <span style="min-width: 30%;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="slideup__profile">
+                    <div class="slideup-profile">
+                        <div class="slideup-profile__basic-information">
+                            <div class="slideup-profile__image"
+                                 style="background-image: url('<%- user.image.urls.small %>');"></div>
+                            <div class="slideup-profile__status + <%= user.is_online ? 'is-online' : '' %>"
+                                 data-connection-status-for-user-id="<%= user.id %>"></div>
+                            <div class="slideup-profile__title">
+                                <%= user.title %>
+                                <% if (auth.user.administrator) { %>
+                                    <span class="text-secondary" style="font-size: 14px;">(ID: <%- user.id %>)</span>
+                                <% } %>
+                            </div>
+                            <% if (user.professional_title) { %>
+                                <div class="slideup-profile__professional-title"><%= user.professional_title %></div>
+                            <% } %>
+                            <% if (user.locality) { %>
+                                <a href="https://www.google.com/maps/search/<%- encodeURIComponent(user.locality.full_address) %>"
+                                   target="_blank" class="slideup-profile__location d-flex align-items-center">
+                                    <img src="{{ asset('img/countries/flags') }}/<%- user.locality.country_code %>.png"
+                                         alt="">
+                                    <span style="margin-left: 5px;"><%= user.locality.full_address %></span>
+                                </a>
+                            <% } %>
+                            <% if (auth.user.administrator) { %>
+                                <div class="slideup-profile__affiliate-modes text-nowrap">
+                                    <span class="text-secondary" style="font-size: 14px;">
+										{{ __('slideups/user_profile.affiliate_mode') }}
+									</span>
+                                    <span class="badge badge-warning" style="cursor: pointer;" data-value="STANDARD">
+										{{ __('slideups/user_profile.standard') }}
+									</span>
+                                    <span class="badge badge-secondary" style="cursor: pointer;" data-value="SUPER">
+										{{ __('slideups/user_profile.super') }}
+									</span>
+                                    <span class="badge badge-secondary" style="cursor: pointer;" data-value="SUPERVISOR">
+										{{ __('slideups/user_profile.supervisor') }}
+									</span>
+                                </div>
+                            <% } %>
+                        </div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="user-profile-<%- id %>__timeline-tab" data-toggle="tab"
+                                   href="#user-profile-<%- id %>__timeline" role="tab"
+                                   aria-controls="user-profile-<%- id %>__timeline" aria-selected="true">
+									{{ __('slideups/user_profile.timeline_screenshots') }}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="user-profile-<%- id %>__profile-tab" data-toggle="tab"
+                                   href="#user-profile-<%- id %>__profile" role="tab"
+                                   aria-controls="user-profile-<%- id %>__profile" aria-selected="false">
+									{{ __('slideups/user_profile.profile') }}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="user-profile-<%- id %>__contract-tab" data-toggle="tab"
+                                   href="#user-profile-<%- id %>__contract" role="tab"
+                                   aria-controls="user-profile-<%- id %>__contract" aria-selected="false">
+									{{ __('slideups/user_profile.contract') }}
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="user-profile-<%- id %>__timeline" role="tabpanel"
+                                 aria-labelledby="user-profile-<%- id %>__timeline-tab">
+                                <div class="slideup-profile__timeline">
+                                    <div class="[ timeline ]"></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="user-profile-<%- id %>__profile" role="tabpanel"
+                                 aria-labelledby="user-profile-<%- id %>__profile-tab">
+                                <div>
+                                    <ul class="nav nav-tabs <%- user.specialized_profiles.length > 0 ? '' : 'd-none' %>"
+                                        role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab"
+                                               href="#user-profile-tabs__general-profile-tab">
+												{{ __('slideups/user_profile.main_profile') }}
+                                            </a>
+                                        </li>
+                                        <% user.specialized_profiles.forEach(function (item, key) { %>
+                                            <li class="nav-item">
+                                                <a class="nav-link" role="tab" data-toggle="tab"
+                                                   href="#user-profile-tabs__skill-resume-tab-<%= key %>">
+                                                    <%= item.title %>
+                                                </a>
+                                            </li>
+                                        <% }); %>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="user-profile-tabs__general-profile-tab"
+                                             class="[ user-profile-tabs__tab-pane ] tab-pane active">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <b><%= user.professional_title %></b>
+                                                    <p><%= user.professional_description %></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <% user.specialized_profiles.forEach(function (item, key) { %>
+                                            <div id="user-profile-tabs__skill-resume-tab-<%= key %>"
+                                                 class="[ user-profile-tabs__tab-pane ] tab-pane">
+                                                <p><%= item.description %></p>
+                                            </div>
+                                        <% }); %>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="user-profile-<%- id %>__contract" role="tabpanel"
+                                 aria-labelledby="user-profile-<%- id %>__contract-tab">
+                                <div class="text-right pb-2">
+                                    <button class="[ slideup__open-new-contract-button ] btn btn-primary { d-none }">
+										{{ __('slideups/user_profile.open_new_contract') }}
+                                    </button>
+                                </div>
+                                <div class="user-profile-no-contracts <%- (user.contracts.length > 0 ? 'd-none' : '') %>">
+                                    <div class="mb-3">{{ __('slideups/user_profile.no_contract_yet') }}</div>
+                                    <!-- <button class="btn btn-primary">Open new contract</button> -->
+                                </div>
+                                <table class="user-profile-contracts <%- (user.contracts.length > 0 ? '' : 'd-none') %>">
+                                    <thead>
+                                    <th>{{ __('slideups/user_profile.title') }}</th>
+                                    <th class="text-center">{{ __('slideups/user_profile.direction') }}</th>
+                                    <th class="text-center">{{ __('slideups/user_profile.rate') }}</th>
+                                    <th class="text-center">{{ __('slideups/user_profile.total_hours') }}</th>
+                                    <th class="text-center">{{ __('slideups/user_profile.total_earned') }}</th>
+                                    <th class="text-center">{{ __('slideups/user_profile.status') }}</th>
+                                    <th></th>
+                                    </thead>
+                                    <tbody class="user-profile-contracts__body"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <% } else { %>
+                <div class="slideup__loader"></div>
+            <% } %>
+        </div>
+    </div>
+</div>
+
+@ejs_template('slideups.user_profile_slideup_contract_item')

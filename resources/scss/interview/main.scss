@@ -1,0 +1,29 @@
+header {
+	height: 75px;
+}
+
+.navbar {
+	box-shadow: 0 2px 5px rgba(#000000, 10%);
+}
+
+.navbar .container {
+	display: block;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.navbar__logo {
+	color: #000000;
+	text-decoration: none;
+
+	&:hover {
+		color: #000000;
+		text-decoration: none;
+	}
+}
+
+.navbar__logo img {
+	width: 50px;
+	margin-right: 5px;
+}

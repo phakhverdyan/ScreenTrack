@@ -1,0 +1,15 @@
+<div class="popover is-project-board-menu">
+	<div class="popover-header">
+		<div class="popover-header__title">{{ __('popovers/board_menu.board_menu') }}</div>
+		<button type="button" class="[ popover-header__close-button ] btn">&times;</button>
+	</div>
+	<div class="popover-content">
+		<div class="popover-list">
+			<% if ([ 'OWNER', 'ADMINISTRATOR' ].indexOf(project.pivot.role) > -1) { %>
+				<a href="#" class="popover-list-item + is-archive-board">
+					<span><%- __('popovers.board_menu.archive_board', { board_name: project_board.name }) %></span>
+				</a>
+			<% } %>
+		</div>
+	</div>
+</div>

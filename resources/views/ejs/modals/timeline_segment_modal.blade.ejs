@@ -1,0 +1,30 @@
+<div
+    class="modal fade + is-timeline-segment"
+    data-background="false"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="[ modal__close-button ] btn" data-dismiss="modal">&times;</button>
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+                <a href="#" class="modal__screenshot" target="_blank" title="Open this Screenshot in a new tab">
+                    <img src="about:blank" alt="">
+                </a>
+                <div class="modal__no-screenshot py-5 text-center d-none">Screenshot is unavailable</div>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+                <button type="button" class="modal__prev-button btn btn-default">
+                    <img class="modal__arrow" src="{{ asset_no_cache('img/menu-icons/left-arrow.svg') }}" alt="">
+                </button>
+                <span class="modal__current-screenshot"></span>
+                <button type="button" class="modal__next-button btn btn-default">
+                    <img class="modal__arrow" src="{{ asset_no_cache('img/menu-icons/right-arrow.svg') }}" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

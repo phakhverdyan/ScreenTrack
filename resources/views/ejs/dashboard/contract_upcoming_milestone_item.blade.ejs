@@ -1,0 +1,16 @@
+<div class="contract-upcoming-milestone-item" data-id="<%= milestone.id %>">
+	<div class="row">
+		<div class="col" style="max-width: 40px;">
+			#<%- (milestone_index + 1) %>
+		</div>
+		<div class="col">
+			<%= milestone.title %> (<%- Math.round(percentage * 100.0) %>%)
+		</div>
+		<div class="col">
+			<a href="/dashboard/projects/<%- milestone.project.id %>"><%= milestone.project.name %></a>
+		</div>
+		<div class="col-2 text-right text-nowrap">
+			$<%- number_format(milestone.amount) %>
+		</div>
+	</div>	
+</div>

@@ -1,0 +1,41 @@
+<div class="chat-item + <%- item.typing_members.length > 0 ? 'has-typing-members' : '' %>" data-id="<%= chat.id %>" data-last-message-id="<%- chat.last_message_id %>">
+    <div class="chat-item-dropzone">
+        <span class="chat-item-dropzone__text">Drop to send file</span>
+    </div>
+    <div class="chat-item__profile">
+        <div class="chat-item__image" style="background-image: url('<%- chat.image_url %>');"></div>
+        <div class="chat-item__status + <%= chat.opposite_member.user.is_online ? 'is-online' : '' %>" data-connection-status-for-user-id="<%- chat.opposite_member.user.id %>"></div>
+        <div class="chat-item__flag" style="background-image: url('/img/countries/flags/<%- chat.opposite_member.user.country_code || '_' %>.png');" title="<%= chat.opposite_member.user.locality ? chat.opposite_member.user.locality.full_address : 'Unknown Country' %>"></div>
+        <div class="chat-item__title" title="@<%= chat.opposite_member.user.slug %>"><%= chat.title %></div>
+        <div class="chat-item__description">
+            <% if (chat.opposite_member.user.contract) { %>
+                <span class="badge badge-warning" title="Active Contract: <%= chat.opposite_member.user.contract.title %>">
+                    $<%- chat.opposite_member.user.contract.hourly_rate %>/h
+                </span>
+            <% } %>
+            <% if (chat.opposite_member.user.contract && chat.opposite_member.user.contract.employer_user_id == auth.user.id) { %>
+                <%= chat.opposite_member.user.contract.title %>
+            <% } else { %>
+                <%= chat.description %>
+            <% } %>
+        </div>
+        <div class="chat-item__time">
+            <% if (moment(chat.last_message.created_at).format('D MMM YYYY') == moment().format('D MMM YYYY')) { %>
+                <%= moment(chat.last_message.created_at).format('hh:mm a') %>
+            <% } else { %>
+                <%= moment(chat.last_message.created_at).format('D MMM YYYY') %>
+            <% } %>
+        </div>
+    </div>
+    <div class="chat-item__message">
+        <div class="chat-item__message__text"><%= chat.last_message.text %></div>
+        <span class="badge badge-primary <%- chat.count_of_unread_messages ? '' : 'd-none' %>">
+            <%= chat.count_of_unread_messages %>
+        </span>
+    </div>
+    <div class="chat-item__typing-members">
+        <% item.typing_members.forEach(function(typing_member) { %>
+            <img src="<%- typing_member.user.image.urls.tiny %>" alt="" title="<%= typing_member.user.title %>">
+        <% }); %>
+    </div>
+</div>

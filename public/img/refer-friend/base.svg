@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="651.53" height="651.53" viewBox="0 0 651.53 651.53">
+  <defs>
+    <linearGradient id="a82ff87c-4787-4921-a135-393b6fc4c092" x1="355.27" y1="-1531.21" x2="515.52" y2="-1691.47" gradientTransform="matrix(1, -0.01, 0.11, -1, 89.74, -1267.19)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#007cff"/>
+      <stop offset="1" stop-color="#002aff"/>
+    </linearGradient>
+  </defs>
+  <title>intercAsset 29</title>
+  <g id="503fffe4-ef38-47b0-b7eb-9985148062be" data-name="Layer 2">
+    <g id="fe99b340-8b87-4c1e-9233-e36021054e45" data-name="Layer 1">
+      <g>
+        <circle cx="325.76" cy="325.76" r="325.26" fill="none" stroke="#e5e5e5" stroke-miterlimit="10" stroke-dasharray="15.03 15.03"/>
+        <g id="232e6d77-26e4-451e-8cfe-07d15b02e08c" data-name="Layer 2">
+          <g id="29ba00af-b096-4525-bd13-42e4ff11373b" data-name="Layer 1-2">
+            <path d="M242.5,231.86l160.72-1.25a15.14,15.14,0,0,1,15.56,17.28L406.1,358.56a20.33,20.33,0,0,1-19.54,17.56l-160.72,1.25a15.14,15.14,0,0,1-15.56-17.28L223,249.42A20.33,20.33,0,0,1,242.5,231.86Z" fill="#00b1ff" opacity="0.66" style="isolation: isolate"/>
+            <path d="M271.05,263.25,431.77,262a15.14,15.14,0,0,1,15.56,17.28L434.66,390a20.35,20.35,0,0,1-19.55,17.56l-160.72,1.25a15.14,15.14,0,0,1-15.56-17.28L251.5,280.81A20.35,20.35,0,0,1,271.05,263.25Z" opacity="0.7" fill="url(#a82ff87c-4787-4921-a135-393b6fc4c092)" style="isolation: isolate"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

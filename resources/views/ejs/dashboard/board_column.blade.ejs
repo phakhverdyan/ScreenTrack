@@ -1,0 +1,22 @@
+<div class="[ board-column-wrapper ]" data-id="<%- column.id %>">
+    <div class="[ board-column ]">
+        <div class="[ board-column-header ] + has-extra">
+            <div class="[ board-column-header__target ]"></div>
+            <textarea class="[ board-column-header__title ]" spellcheck="false"><%= column.title %></textarea>
+            <a href="#" class="[ board-column-header__delete-button ] btn">&times;</a>
+        </div>
+        <div class="[ board-column__items ]">
+            <div class="[ board-item ] d-none"></div>
+            <form class="[ board-column__add-item-form ] + is-hidden">
+                <textarea class="[ board-column__add-item-form__input ]" placeholder="{{ __('dashboard/project_tasks.enter_task_name') }}"></textarea>
+                <button type="submit" class="[ board-column__add-item-form__add-button ] btn btn-primary">{{ __('dashboard/project_tasks.add_task') }}</button>
+                <button type="button" class="[ board-column__add-item-form__close-button ] btn">&times;</button>
+            </form>
+        </div>
+        <a href="#" class="[ board-column__add-item-link ]">{{ __('dashboard/project_tasks.add_new_task') }}</a>
+        <div class="[ board-column-dropzone ]">
+            <span class="[ board-column-dropzone__text ]">{{ __('dashboard/project_tasks.drop_to_create_new_task') }}</span>
+        </div>
+        <div class="[ board-column__loader ]"></div>
+    </div>
+</div>

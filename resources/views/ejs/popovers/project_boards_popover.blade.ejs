@@ -1,0 +1,12 @@
+<div class="popover is-project-boards">
+	<div class="popover-header">
+		<div class="popover-header__title">{{ __('popovers/project_menu.project_boards') }}</div>
+		<button type="button" class="[ popover-header__close-button ] btn">&times;</button>
+	</div>
+	<div class="popover-content + has-footer">
+		<select class="[ popover-board-select ] custom-select is-static"></select>
+		<div class="[ popover__no-boards-message ] d-none">
+			{{ __('popovers/project_boards.no_boards_found') }}
+		</div>
+	</div>
+</div>

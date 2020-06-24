@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="693.09" height="364.51" viewBox="0 0 693.09 364.51">
+  <title>intercAsset 18</title>
+  <g id="04e73b92-0145-43a1-8fc7-ccc9a226da0d" data-name="Layer 2">
+    <g id="10002fee-a14d-471e-af67-0e93b25333e6" data-name="Layer 1">
+      <rect y="1.13" width="577" height="363.38" rx="14.25" ry="14.25" fill="#fff"/>
+      <path d="M12.8,0H564.2A12.8,12.8,0,0,1,577,12.8V33.09a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V12.8A12.8,12.8,0,0,1,12.8,0Z" fill="#e8e8e8"/>
+      <circle cx="25.81" cy="16.54" r="7.02" fill="#e74c3c"/>
+      <circle cx="48.25" cy="16.54" r="7.02" fill="#f1c40f"/>
+      <circle cx="70.69" cy="16.54" r="7.02" fill="#2ecc71"/>
+      <rect x="34.25" y="65.56" width="198.52" height="198.52" rx="9.63" ry="9.63" fill="none" stroke="#e8e8e8" stroke-miterlimit="10" stroke-dasharray="14.95 14.95"/>
+      <rect x="491.09" y="63.82" width="202.01" height="171.82" rx="9.63" ry="9.63" fill="#e8e8e8"/>
+      <rect x="259.47" y="65.56" width="198.52" height="121.9" rx="9.63" ry="9.63" fill="none" stroke="#e8e8e8" stroke-miterlimit="10" stroke-dasharray="14.86 14.86"/>
+    </g>
+  </g>
+</svg>

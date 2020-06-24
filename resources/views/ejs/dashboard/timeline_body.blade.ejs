@@ -1,0 +1,33 @@
+<div class="[ timeline__hours ]">
+	<% hours.forEach(function(hour) { %>
+		<div class="[ timeline-hour ]">
+			<div class="[ timeline-hour__title ]">
+				<%= moment(hour.date).format('h:mm') %>
+				&ndash;
+				<%= moment(hour.date).add(1, 'hours').format('h:mm a') %>
+				<span class="badge badge-success ml-1"><%= hour.total_minutes %>min</span>
+				<span class="badge badge-warning">$<%= hour.total_amount %></span>
+			</div>
+			<div class="[ timeline-hour__sections ]">
+				<% hour.sections.forEach(function(section, section_index) { %>
+					<div class="[ timeline-section ] + <%= section.segment ? 'has-segment' : '' %> <%= section.segment && section.segment.is_last ? 'is-last' : '' %>" data-id="<%= section.segment ? section.segment.id : '' %>">
+						<% if (section.segment) { %>
+							<div class="[ timeline-section__title ]">
+								<span><%= moment(section.date).format('h:mm a') %></span>
+							</div>
+							<% if (section.segment.screenshot) { %>
+								<a href="<%- section.segment.screenshot.urls.original %>" target="_blank" class="[ timeline-section__screenshot ]" style="background-image: url('<%- section.segment.screenshot.urls.small %>');"></a>
+							<% } else { %>
+								<div class="[ timeline-section__screenshot ]"></div>
+							<% } %>
+							<div class="[ timeline-section__statistics ]">
+								<div><%= section.segment.count_of_keyboard_clicks %> Keys</div>
+								<div><%= section.segment.count_of_mouse_clicks %> Clicks</div>
+							</div>
+						<% } %>
+					</div>
+				<% }); %>
+			</div>
+		</div>
+	<% }); %>
+</div>

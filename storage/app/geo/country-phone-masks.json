@@ -1,0 +1,982 @@
+{
+    "AC": {
+        "phone_code": "247",
+        "phone_number_mask": "XXXXX"
+    },
+    "AD": {
+        "phone_code": "376",
+        "phone_number_mask": "XXX XXX"
+    },
+    "AE": {
+        "phone_code": "971",
+        "phone_number_mask": "0XX XXX XXXX"
+    },
+    "AF": {
+        "phone_code": "93",
+        "phone_number_mask": "0XX XXX XXXX"
+    },
+    "AG": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "AI": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "AL": {
+        "phone_code": "355",
+        "phone_number_mask": "0XX XXX XXXX"
+    },
+    "AM": {
+        "phone_code": "374",
+        "phone_number_mask": "0XX XXXXXX"
+    },
+    "AO": {
+        "phone_code": "244",
+        "phone_number_mask": "XXX XXX XXX"
+    },
+    "AR": {
+        "phone_code": "54",
+        "phone_number_mask": "01X XX-XXXX-XXXX"
+    },
+    "AS": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "AT": {
+        "phone_code": "43",
+        "phone_number_mask": "0XXX XXXXXX"
+    },
+    "AU": {
+        "phone_code": "61",
+        "phone_number_mask": "0XXX XXX XXX"
+    },
+    "AW": {
+        "phone_code": "297",
+        "phone_number_mask": "XXX XXXX"
+    },
+    "AX": {
+        "phone_code": "358",
+        "phone_number_mask": "0XX XXXXXXX"
+    },
+    "AZ": {
+        "phone_code": "994",
+        "phone_number_mask": "0XX XXX XX XX"
+    },
+    "BA": {
+        "phone_code": "387",
+        "phone_number_mask": "0XX XXX XXX"
+    },
+    "BB": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "BD": {
+        "phone_code": "880",
+        "phone_number_mask": "0XXXX-XXXXXX"
+    },
+    "BE": {
+        "phone_code": "32",
+        "phone_number_mask": "0XXX XX XX XX"
+    },
+    "BF": {
+        "phone_code": "226",
+        "phone_number_mask": "XX XX XX XX"
+    },
+    "BG": {
+        "phone_code": "359",
+        "phone_number_mask": "0XX XXX XXX"
+    },
+    "BH": {
+        "phone_code": "973",
+        "phone_number_mask": "XXXX XXXX"
+    },
+    "BI": {
+        "phone_code": "257",
+        "phone_number_mask": "XX XX XX XX"
+    },
+    "BJ": {
+        "phone_code": "229",
+        "phone_number_mask": "XX XX XX XX"
+    },
+    "BL": {
+        "phone_code": "590",
+        "phone_number_mask": "0XXX XX XX XX"
+    },
+    "BM": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "BN": {
+        "phone_code": "673",
+        "phone_number_mask": "XXX XXXX"
+    },
+    "BO": {
+        "phone_code": "591",
+        "phone_number_mask": "XXXXXXXX"
+    },
+    "BQ": {
+        "phone_code": "599",
+        "phone_number_mask": "XXX XXXX"
+    },
+    "BR": {
+        "phone_code": "55",
+        "phone_number_mask": "(XX) XXXXX-XXXX"
+    },
+    "BS": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "BT": {
+        "phone_code": "975",
+        "phone_number_mask": "XX XX XX XX"
+    },
+    "BW": {
+        "phone_code": "267",
+        "phone_number_mask": "XX XXX XXX"
+    },
+    "BY": {
+        "phone_code": "375",
+        "phone_number_mask": "8 0XX XXX-XX-XX"
+    },
+    "BZ": {
+        "phone_code": "501",
+        "phone_number_mask": "XXX-XXXX"
+    },
+    "CA": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "CC": {
+        "phone_code": "61",
+        "phone_number_mask": "0XXX XXX XXX"
+    },
+    "CD": {
+        "phone_code": "243",
+        "phone_number_mask": "0XXX XXX XXX"
+    },
+    "CF": {
+        "phone_code": "236",
+        "phone_number_mask": "XX XX XX XX"
+    },
+    "CG": {
+        "phone_code": "242",
+        "phone_number_mask": "XX XXX XXXX"
+    },
+    "CH": {
+        "phone_code": "41",
+        "phone_number_mask": "0XX XXX XX XX"
+    },
+    "CI": {
+        "phone_code": "225",
+        "phone_number_mask": "XX XX XX XX"
+    },
+    "CK": {
+        "phone_code": "682",
+        "phone_number_mask": "XX XXX"
+    },
+    "CL": {
+        "phone_code": "56",
+        "phone_number_mask": "(X) XXXX XXXX"
+    },
+    "CM": {
+        "phone_code": "237",
+        "phone_number_mask": "X XX XX XX XX"
+    },
+    "CN": {
+        "phone_code": "86",
+        "phone_number_mask": "XXX XXXX XXXX"
+    },
+    "CO": {
+        "phone_code": "57",
+        "phone_number_mask": "XXX XXXXXXX"
+    },
+    "CR": {
+        "phone_code": "506",
+        "phone_number_mask": "XXXX XXXX"
+    },
+    "CU": {
+        "phone_code": "53",
+        "phone_number_mask": "0X XXXXXXX"
+    },
+    "CV": {
+        "phone_code": "238",
+        "phone_number_mask": "XXX XX XX"
+    },
+    "CW": {
+        "phone_code": "599",
+        "phone_number_mask": "X XXX XXXX"
+    },
+    "CX": {
+        "phone_code": "61",
+        "phone_number_mask": "0XXX XXX XXX"
+    },
+    "CY": {
+        "phone_code": "357",
+        "phone_number_mask": "XX XXXXXX"
+    },
+    "CZ": {
+        "phone_code": "420",
+        "phone_number_mask": "XXX XXX XXX"
+    },
+    "DE": {
+        "phone_code": "49",
+        "phone_number_mask": "0XXXX XXXXXXX"
+    },
+    "DJ": {
+        "phone_code": "253",
+        "phone_number_mask": "XX XX XX XX"
+    },
+    "DK": {
+        "phone_code": "45",
+        "phone_number_mask": "XX XX XX XX"
+    },
+    "DM": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "DO": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "DZ": {
+        "phone_code": "213",
+        "phone_number_mask": "0XXX XX XX XX"
+    },
+    "EC": {
+        "phone_code": "593",
+        "phone_number_mask": "0XX XXX XXXX"
+    },
+    "EE": {
+        "phone_code": "372",
+        "phone_number_mask": "XXXX XXXX"
+    },
+    "EG": {
+        "phone_code": "20",
+        "phone_number_mask": "0XXX XXX XXXX"
+    },
+    "EH": {
+        "phone_code": "212",
+        "phone_number_mask": "0XXX-XXXXXX"
+    },
+    "ER": {
+        "phone_code": "291",
+        "phone_number_mask": "0X XXX XXX"
+    },
+    "ES": {
+        "phone_code": "34",
+        "phone_number_mask": "XXX XX XX XX"
+    },
+    "ET": {
+        "phone_code": "251",
+        "phone_number_mask": "0XX XXX XXXX"
+    },
+    "FI": {
+        "phone_code": "358",
+        "phone_number_mask": "0XX XXXXXXX"
+    },
+    "FJ": {
+        "phone_code": "679",
+        "phone_number_mask": "XXX XXXX"
+    },
+    "FK": {
+        "phone_code": "500",
+        "phone_number_mask": "XXXXX"
+    },
+    "FM": {
+        "phone_code": "691",
+        "phone_number_mask": "XXX XXXX"
+    },
+    "FO": {
+        "phone_code": "298",
+        "phone_number_mask": "XXXXXX"
+    },
+    "FR": {
+        "phone_code": "33",
+        "phone_number_mask": "0X XX XX XX XX"
+    },
+    "GA": {
+        "phone_code": "241",
+        "phone_number_mask": "XX XX XX XX"
+    },
+    "GB": {
+        "phone_code": "44",
+        "phone_number_mask": "0XXXX XXXXXX"
+    },
+    "GD": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "GE": {
+        "phone_code": "995",
+        "phone_number_mask": "XXX XX XX XX"
+    },
+    "GF": {
+        "phone_code": "594",
+        "phone_number_mask": "0XXX XX XX XX"
+    },
+    "GG": {
+        "phone_code": "44",
+        "phone_number_mask": "0XXXX XXXXXX"
+    },
+    "GH": {
+        "phone_code": "233",
+        "phone_number_mask": "0XX XXX XXXX"
+    },
+    "GI": {
+        "phone_code": "350",
+        "phone_number_mask": "XXXXXXXX"
+    },
+    "GL": {
+        "phone_code": "299",
+        "phone_number_mask": "XX XX XX"
+    },
+    "GM": {
+        "phone_code": "220",
+        "phone_number_mask": "XXX XXXX"
+    },
+    "GN": {
+        "phone_code": "224",
+        "phone_number_mask": "XXX XX XX XX"
+    },
+    "GP": {
+        "phone_code": "590",
+        "phone_number_mask": "0XXX XX XX XX"
+    },
+    "GQ": {
+        "phone_code": "240",
+        "phone_number_mask": "XXX XXX XXX"
+    },
+    "GR": {
+        "phone_code": "30",
+        "phone_number_mask": "XXX XXX XXXX"
+    },
+    "GT": {
+        "phone_code": "502",
+        "phone_number_mask": "XXXX XXXX"
+    },
+    "GU": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "GW": {
+        "phone_code": "245",
+        "phone_number_mask": "XXX XXX XXX"
+    },
+    "GY": {
+        "phone_code": "592",
+        "phone_number_mask": "XXX XXXX"
+    },
+    "HK": {
+        "phone_code": "852",
+        "phone_number_mask": "XXXX XXXX"
+    },
+    "HN": {
+        "phone_code": "504",
+        "phone_number_mask": "XXXX-XXXX"
+    },
+    "HR": {
+        "phone_code": "385",
+        "phone_number_mask": "0XX XXX XXXX"
+    },
+    "HT": {
+        "phone_code": "509",
+        "phone_number_mask": "XX XX XXXX"
+    },
+    "HU": {
+        "phone_code": "36",
+        "phone_number_mask": "(XX) XXX XXXX"
+    },
+    "ID": {
+        "phone_code": "62",
+        "phone_number_mask": "0XXX-XXX-XXX"
+    },
+    "IE": {
+        "phone_code": "353",
+        "phone_number_mask": "0XX XXX XXXX"
+    },
+    "IL": {
+        "phone_code": "972",
+        "phone_number_mask": "0XX-XXX-XXXX"
+    },
+    "IM": {
+        "phone_code": "44",
+        "phone_number_mask": "0XXXX XXXXXX"
+    },
+    "IN": {
+        "phone_code": "91",
+        "phone_number_mask": "0XXXXX XXXXX"
+    },
+    "IO": {
+        "phone_code": "246",
+        "phone_number_mask": "XXX XXXX"
+    },
+    "IQ": {
+        "phone_code": "964",
+        "phone_number_mask": "0XXX XXX XXXX"
+    },
+    "IR": {
+        "phone_code": "98",
+        "phone_number_mask": "0XXX XXX XXXX"
+    },
+    "IS": {
+        "phone_code": "354",
+        "phone_number_mask": "XXX XXXX"
+    },
+    "IT": {
+        "phone_code": "39",
+        "phone_number_mask": "XXX XXX XXXX"
+    },
+    "JE": {
+        "phone_code": "44",
+        "phone_number_mask": "0XXXX XXXXXX"
+    },
+    "JM": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "JO": {
+        "phone_code": "962",
+        "phone_number_mask": "0X XXXX XXXX"
+    },
+    "JP": {
+        "phone_code": "81",
+        "phone_number_mask": "0XX-XXXX-XXXX"
+    },
+    "KE": {
+        "phone_code": "254",
+        "phone_number_mask": "0XXX XXXXXX"
+    },
+    "KG": {
+        "phone_code": "996",
+        "phone_number_mask": "0XXX XXX XXX"
+    },
+    "KH": {
+        "phone_code": "855",
+        "phone_number_mask": "0XX XXX XXX"
+    },
+    "KI": {
+        "phone_code": "686",
+        "phone_number_mask": "XXXXXXXX"
+    },
+    "KM": {
+        "phone_code": "269",
+        "phone_number_mask": "XXX XX XX"
+    },
+    "KN": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "KP": {
+        "phone_code": "850",
+        "phone_number_mask": "0XXX XXX XXXX"
+    },
+    "KR": {
+        "phone_code": "82",
+        "phone_number_mask": "0XX-XXXX-XXXX"
+    },
+    "KW": {
+        "phone_code": "965",
+        "phone_number_mask": "XXX XXXXX"
+    },
+    "KY": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "KZ": {
+        "phone_code": "7",
+        "phone_number_mask": "8 (XXX) XXX XXXX"
+    },
+    "LA": {
+        "phone_code": "856",
+        "phone_number_mask": "0XX XX XXX XXX"
+    },
+    "LB": {
+        "phone_code": "961",
+        "phone_number_mask": "XX XXX XXX"
+    },
+    "LC": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "LI": {
+        "phone_code": "423",
+        "phone_number_mask": "XXX XXX XXX"
+    },
+    "LK": {
+        "phone_code": "94",
+        "phone_number_mask": "0XX XXX XXXX"
+    },
+    "LR": {
+        "phone_code": "231",
+        "phone_number_mask": "0XX XXX XXXX"
+    },
+    "LS": {
+        "phone_code": "266",
+        "phone_number_mask": "XXXX XXXX"
+    },
+    "LT": {
+        "phone_code": "370",
+        "phone_number_mask": "(8-XXX) XXXXX"
+    },
+    "LU": {
+        "phone_code": "352",
+        "phone_number_mask": "XXX XXX XXX"
+    },
+    "LV": {
+        "phone_code": "371",
+        "phone_number_mask": "XX XXX XXX"
+    },
+    "LY": {
+        "phone_code": "218",
+        "phone_number_mask": "0XX-XXXXXXX"
+    },
+    "MA": {
+        "phone_code": "212",
+        "phone_number_mask": "0XXX-XXXXXX"
+    },
+    "MC": {
+        "phone_code": "377",
+        "phone_number_mask": "0X XX XX XX XX"
+    },
+    "MD": {
+        "phone_code": "373",
+        "phone_number_mask": "0XXX XX XXX"
+    },
+    "ME": {
+        "phone_code": "382",
+        "phone_number_mask": "0XX XXX XXX"
+    },
+    "MF": {
+        "phone_code": "590",
+        "phone_number_mask": "0XXX XX XX XX"
+    },
+    "MG": {
+        "phone_code": "261",
+        "phone_number_mask": "0XX XX XXX XX"
+    },
+    "MH": {
+        "phone_code": "692",
+        "phone_number_mask": "XXX-XXXX"
+    },
+    "MK": {
+        "phone_code": "389",
+        "phone_number_mask": "0XX XXX XXX"
+    },
+    "ML": {
+        "phone_code": "223",
+        "phone_number_mask": "XX XX XX XX"
+    },
+    "MM": {
+        "phone_code": "95",
+        "phone_number_mask": "0X XXX XXXX"
+    },
+    "MN": {
+        "phone_code": "976",
+        "phone_number_mask": "XXXX XXXX"
+    },
+    "MO": {
+        "phone_code": "853",
+        "phone_number_mask": "XXXX XXXX"
+    },
+    "MP": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "MQ": {
+        "phone_code": "596",
+        "phone_number_mask": "0XXX XX XX XX"
+    },
+    "MR": {
+        "phone_code": "222",
+        "phone_number_mask": "XX XX XX XX"
+    },
+    "MS": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "MT": {
+        "phone_code": "356",
+        "phone_number_mask": "XXXX XXXX"
+    },
+    "MU": {
+        "phone_code": "230",
+        "phone_number_mask": "XXXX XXXX"
+    },
+    "MV": {
+        "phone_code": "960",
+        "phone_number_mask": "XXX-XXXX"
+    },
+    "MW": {
+        "phone_code": "265",
+        "phone_number_mask": "0XXX XX XX XX"
+    },
+    "MX": {
+        "phone_code": "52",
+        "phone_number_mask": "04X XXX XXX XXXX"
+    },
+    "MY": {
+        "phone_code": "60",
+        "phone_number_mask": "0XX-XXX XXXX"
+    },
+    "MZ": {
+        "phone_code": "258",
+        "phone_number_mask": "XX XXX XXXX"
+    },
+    "NA": {
+        "phone_code": "264",
+        "phone_number_mask": "0XX XXX XXXX"
+    },
+    "NC": {
+        "phone_code": "687",
+        "phone_number_mask": "XX.XX.XX"
+    },
+    "NE": {
+        "phone_code": "227",
+        "phone_number_mask": "XX XX XX XX"
+    },
+    "NF": {
+        "phone_code": "672",
+        "phone_number_mask": "X XXXXX"
+    },
+    "NG": {
+        "phone_code": "234",
+        "phone_number_mask": "0XXX XXX XXXX"
+    },
+    "NI": {
+        "phone_code": "505",
+        "phone_number_mask": "XXXX XXXX"
+    },
+    "NL": {
+        "phone_code": "31",
+        "phone_number_mask": "0X XXXXXXXX"
+    },
+    "NO": {
+        "phone_code": "47",
+        "phone_number_mask": "XXX XX XXX"
+    },
+    "NP": {
+        "phone_code": "977",
+        "phone_number_mask": "XXX-XXXXXXX"
+    },
+    "NR": {
+        "phone_code": "674",
+        "phone_number_mask": "XXX XXXX"
+    },
+    "NU": {
+        "phone_code": "683",
+        "phone_number_mask": "XXX XXXX"
+    },
+    "NZ": {
+        "phone_code": "64",
+        "phone_number_mask": "0XX XXX XXXX"
+    },
+    "OM": {
+        "phone_code": "968",
+        "phone_number_mask": "XXXX XXXX"
+    },
+    "PA": {
+        "phone_code": "507",
+        "phone_number_mask": "XXXX-XXXX"
+    },
+    "PE": {
+        "phone_code": "51",
+        "phone_number_mask": "XXX XXX XXX"
+    },
+    "PF": {
+        "phone_code": "689",
+        "phone_number_mask": "XX XX XX XX"
+    },
+    "PG": {
+        "phone_code": "675",
+        "phone_number_mask": "XXXX XXXX"
+    },
+    "PH": {
+        "phone_code": "63",
+        "phone_number_mask": "0XXX XXX XXXX"
+    },
+    "PK": {
+        "phone_code": "92",
+        "phone_number_mask": "0XXX XXXXXXX"
+    },
+    "PL": {
+        "phone_code": "48",
+        "phone_number_mask": "XXX XXX XXX"
+    },
+    "PM": {
+        "phone_code": "508",
+        "phone_number_mask": "0XX XX XX"
+    },
+    "PR": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "PS": {
+        "phone_code": "970",
+        "phone_number_mask": "0XXX XXX XXX"
+    },
+    "PT": {
+        "phone_code": "351",
+        "phone_number_mask": "XXX XXX XXX"
+    },
+    "PW": {
+        "phone_code": "680",
+        "phone_number_mask": "XXX XXXX"
+    },
+    "PY": {
+        "phone_code": "595",
+        "phone_number_mask": "0XXX XXXXXX"
+    },
+    "QA": {
+        "phone_code": "974",
+        "phone_number_mask": "XXXX XXXX"
+    },
+    "RE": {
+        "phone_code": "262",
+        "phone_number_mask": "0XXX XX XX XX"
+    },
+    "RO": {
+        "phone_code": "40",
+        "phone_number_mask": "0XXX XXX XXX"
+    },
+    "RS": {
+        "phone_code": "381",
+        "phone_number_mask": "0XX XXXXXXX"
+    },
+    "RU": {
+        "phone_code": "7",
+        "phone_number_mask": "8 (XXX) XXX-XX-XX"
+    },
+    "RW": {
+        "phone_code": "250",
+        "phone_number_mask": "0XXX XXX XXX"
+    },
+    "SA": {
+        "phone_code": "966",
+        "phone_number_mask": "0XX XXX XXXX"
+    },
+    "SB": {
+        "phone_code": "677",
+        "phone_number_mask": "XX XXXXX"
+    },
+    "SC": {
+        "phone_code": "248",
+        "phone_number_mask": "X XXX XXX"
+    },
+    "SD": {
+        "phone_code": "249",
+        "phone_number_mask": "0XX XXX XXXX"
+    },
+    "SE": {
+        "phone_code": "46",
+        "phone_number_mask": "0XX-XXX XX XX"
+    },
+    "SG": {
+        "phone_code": "65",
+        "phone_number_mask": "XXXX XXXX"
+    },
+    "SH": {
+        "phone_code": "290",
+        "phone_number_mask": "XXXXX"
+    },
+    "SI": {
+        "phone_code": "386",
+        "phone_number_mask": "0XX XXX XXX"
+    },
+    "SJ": {
+        "phone_code": "47",
+        "phone_number_mask": "XXX XX XXX"
+    },
+    "SK": {
+        "phone_code": "421",
+        "phone_number_mask": "0XXX XXX XXX"
+    },
+    "SL": {
+        "phone_code": "232",
+        "phone_number_mask": "(0XX) XXXXXX"
+    },
+    "SM": {
+        "phone_code": "378",
+        "phone_number_mask": "XX XX XX XX"
+    },
+    "SN": {
+        "phone_code": "221",
+        "phone_number_mask": "XX XXX XX XX"
+    },
+    "SO": {
+        "phone_code": "252",
+        "phone_number_mask": "X XXXXXXX"
+    },
+    "SR": {
+        "phone_code": "597",
+        "phone_number_mask": "XXX-XXXX"
+    },
+    "SS": {
+        "phone_code": "211",
+        "phone_number_mask": "0XXX XXX XXX"
+    },
+    "ST": {
+        "phone_code": "239",
+        "phone_number_mask": "XXX XXXX"
+    },
+    "SV": {
+        "phone_code": "503",
+        "phone_number_mask": "XXXX XXXX"
+    },
+    "SX": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "SY": {
+        "phone_code": "963",
+        "phone_number_mask": "0XXX XXX XXX"
+    },
+    "SZ": {
+        "phone_code": "268",
+        "phone_number_mask": "XXXX XXXX"
+    },
+    "TA": {
+        "phone_code": "290",
+        "phone_number_mask": "XXXX"
+    },
+    "TC": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "TD": {
+        "phone_code": "235",
+        "phone_number_mask": "XX XX XX XX"
+    },
+    "TG": {
+        "phone_code": "228",
+        "phone_number_mask": "XX XX XX XX"
+    },
+    "TH": {
+        "phone_code": "66",
+        "phone_number_mask": "0XX XXX XXXX"
+    },
+    "TJ": {
+        "phone_code": "992",
+        "phone_number_mask": "XXX XX XXXX"
+    },
+    "TK": {
+        "phone_code": "690",
+        "phone_number_mask": "XXXX"
+    },
+    "TL": {
+        "phone_code": "670",
+        "phone_number_mask": "XXXX XXXX"
+    },
+    "TM": {
+        "phone_code": "993",
+        "phone_number_mask": "8 XX XXXXXX"
+    },
+    "TN": {
+        "phone_code": "216",
+        "phone_number_mask": "XX XXX XXX"
+    },
+    "TO": {
+        "phone_code": "676",
+        "phone_number_mask": "XXX XXXX"
+    },
+    "TR": {
+        "phone_code": "90",
+        "phone_number_mask": "0XXX XXX XX XX"
+    },
+    "TT": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "TV": {
+        "phone_code": "688",
+        "phone_number_mask": "XXXXXX"
+    },
+    "TW": {
+        "phone_code": "886",
+        "phone_number_mask": "0XXX XXX XXX"
+    },
+    "TZ": {
+        "phone_code": "255",
+        "phone_number_mask": "0XXX XXX XXX"
+    },
+    "UA": {
+        "phone_code": "380",
+        "phone_number_mask": "0XX XXX XXXX"
+    },
+    "UG": {
+        "phone_code": "256",
+        "phone_number_mask": "0XXX XXXXXX"
+    },
+    "US": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "UY": {
+        "phone_code": "598",
+        "phone_number_mask": "0XX XXX XXX"
+    },
+    "UZ": {
+        "phone_code": "998",
+        "phone_number_mask": "XX XXX XX XX"
+    },
+    "VA": {
+        "phone_code": "39",
+        "phone_number_mask": "XXX XXX XXXX"
+    },
+    "VC": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "VE": {
+        "phone_code": "58",
+        "phone_number_mask": "0XXX-XXXXXXX"
+    },
+    "VG": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "VI": {
+        "phone_code": "1",
+        "phone_number_mask": "(XXX) XXX-XXXX"
+    },
+    "VN": {
+        "phone_code": "84",
+        "phone_number_mask": "0XX XXX XX XX"
+    },
+    "VU": {
+        "phone_code": "678",
+        "phone_number_mask": "XXX XXXX"
+    },
+    "WF": {
+        "phone_code": "681",
+        "phone_number_mask": "XX XX XX"
+    },
+    "WS": {
+        "phone_code": "685",
+        "phone_number_mask": "XX XXXXX"
+    },
+    "XK": {
+        "phone_code": "383",
+        "phone_number_mask": "0XX XXX XXX"
+    },
+    "YE": {
+        "phone_code": "967",
+        "phone_number_mask": "0XXX XXX XXX"
+    },
+    "YT": {
+        "phone_code": "262",
+        "phone_number_mask": "0XXX XX XX XX"
+    },
+    "ZA": {
+        "phone_code": "27",
+        "phone_number_mask": "0XX XXX XXXX"
+    },
+    "ZM": {
+        "phone_code": "260",
+        "phone_number_mask": "0XX XXXXXXX"
+    },
+    "ZW": {
+        "phone_code": "263",
+        "phone_number_mask": "0XX XXX XXXX"
+    }
+}

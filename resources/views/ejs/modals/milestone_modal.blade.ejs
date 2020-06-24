@@ -1,0 +1,56 @@
+<form class="modal fade"  data-background="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<button type="button" class="[ modal__close-button ] btn" data-dismiss="modal">&times;</button>
+			<div class="modal-header">
+				<%= (milestone ? 'Edit Milestone' : 'Create Milestone') + ' #' + (milestone_index + 1) %>
+			</div>
+			<div class="modal-body">
+				<div class="form">
+					<div class="form-group mb-2">
+						<label for="modal__title" class="mb-1">
+							Milestone Title
+						</label>
+						<input class="form-control" name="milestone[title]" data-name="milestone.title" placeholder="" value="<%= milestone ? milestone.title : '' %>" id="modal__title">
+						<div class="invalid-feedback"></div>
+					</div>
+					<% if (!milestone || !milestone.payment_id) { %>
+						<div class="form-group mb-0">
+							<div class="row">
+								<div class="col-4">
+									<label for="modal__amount" class="mb-1">
+										Milestone Amount
+									</label>
+									<div class="form-control-group + has-prefix" style="position: relative;">
+										<span class="form-control-group__prefix">$</span>
+										<input name="milestone[amount]" data-name="milestone.amount" class="form-control text-right" type="number" step="1" min="0" id="modal__amount" value="<%- milestone ? milestone.amount : '' %>">
+									</div>
+									<div class="invalid-feedback"></div>
+								</div>
+							</div>
+						</div>
+					<% } %>
+					<% if (!milestone && !current_milestone || milestone == current_milestone && !milestone.payment_id) { %>
+						<div class="form-check mt-1">
+							<input type="checkbox" name="milestone[activate]" value="1" class="form-check-input" id="modal__activate">
+							<label class="form-check-label" for="modal__activate">Fund & Activate this Milestone</label>
+						</div>
+					<% } %>
+					<% if (!milestone || !milestone.payment_id) { %>
+						<div class="form-group mt-2">
+		                    <label for="modal__project" class="mb-1">
+		                        Milestone Project
+		                    </label>
+		                    <select class="custom-select" name="milestone[project_id]" id="modal__project"></select>
+		                </div>
+					<% } %>
+					<div class="text-right mt-2">
+						<button type="submit" class="[ modal__save-button ] btn btn-primary mt-2">
+							<%= milestone ? __('modals.milestone.save_milestone') : __('modals.milestone.create_milestone') %>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

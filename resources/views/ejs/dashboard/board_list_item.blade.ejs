@@ -1,0 +1,4 @@
+<div class="[ board-list-item ] + <%- dashboard.selected_board.id == board.id ? 'is-active' : '' %>" data-href="/dashboard/projects/<%= dashboard.selected_project.id %>/boards/<%= board.id %>" data-position="<%- board.position %>" data-id="<%= board.id %>">
+    <div class="[ board-list-item__target ]"></div>
+    <div class="[ board-list-item__title ]" contenteditable="true" spellcheck="false"><%= board.name %></div>
+</div>

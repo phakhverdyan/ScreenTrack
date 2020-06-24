@@ -1,0 +1,28 @@
+<?php
+
+return array (
+  'you_don_t_have_any_company_yet' => 'You don\'t have any company yet. You can add your first company.',
+  'add_company' => 'Add company',
+  'my_companies' => 'My companies',
+  'create_company' => 'Create Company',
+  'edit_company' => 'Edit Company',
+  'create' => 'Create',
+  'save' => 'Save',
+  'saved' => 'Saved!',
+  'cancel' => 'Cancel',
+  'ok' => 'OK',
+  'company_logo' => 'Company logo',
+  'change_logo' => 'Change logo',
+  'upload_logo' => 'Upload logo',
+  'choose_logo_from_pc' => 'Choose logo from PC',
+  'company_don_t_have_logo_yet' => 'Company don\'t have logo, yet',
+  'load_logo' => 'Load logo',
+  'choose_another_logo' => 'Choose another logo',
+  'company_name' => 'Company name',
+  'company_website' => 'Company website',
+  'location' => 'Location',
+  'phone_number' => 'Phone number',
+  'company_description' => 'Company description',
+  'you_really_want_to_delete_this_company' => 'You really want to DELETE this company?',
+  'deleted' => 'Deleted!',
+);

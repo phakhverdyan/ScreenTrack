@@ -1,0 +1,26 @@
+<?php
+
+return array (
+  'create_your_account' => 'Create your account',
+  'please_complete_your_account' => 'Please complete your account',
+  'your_email' => 'Your Email',
+  'first_name' => 'First name',
+  'last_name' => 'Last name',
+  'your_city' => 'Your City',
+  'your_phone_number' => 'Your Phone Number',
+  'company_name' => 'Company Name',
+  'company_size' => 'Company Size',
+  'company_city' => 'Company City',
+  'company_phone_number' => 'Company Phone Number',
+  'register' => 'Register',
+  'by_clicking_register_you_agree' => 'By clicking "Register" you agree to ScreenTrack\'s <a href=":terms_url" target="_blank">Terms of Service</a> and <a href=":privacy_url" target="_blank">Privacy Policy.</a>',
+  'continue' => 'Continue',
+  'professional_title' => 'Professional Title',
+  'professional_title_placeholder' => 'e.g. PHP Developer',
+  'skype' => 'Skype',
+  'skype_placeholder' => 'Your Skype',
+  'hourly_rate' => 'Hourly Rate',
+  'hourly_rate_placeholder' => 'Your Rate',
+  'hourly_rate_hint' => 'Choose your rate per hour',
+  'hourly' => '/h',
+);

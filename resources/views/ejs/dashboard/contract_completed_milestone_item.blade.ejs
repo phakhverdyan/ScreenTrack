@@ -1,0 +1,18 @@
+<div class="contract-completed-milestone-item contract">
+	<div class="row">
+		<div class="col" style="max-width: 40px;">
+			#<%- (milestone_index + 1) %>
+		</div>
+		<div class="col">
+			<%= milestone.title %> (<%- Math.round(percentage * 100.0) %>%)
+		</div>
+		<div class="col">
+			<a href="/dashboard/projects/<%- milestone.project.id %>"><%= milestone.project.name %></a>
+		</div>
+		<div class="col text-right text-nowrap d-flex align-items-center" style="max-width: 220px;">
+			<img src="{{ asset_no_cache('img/check-mark.green.svg') }}" alt="" style="width: 16px;" class="mr-1">
+			$<%- number_format(milestone.amount) %>
+			(<%- milestone.is_in_escrow ? 'Escrow, ' + Math.ceil(milestone.escrow_time / 86400) + ' days' : 'Paid' %>)
+		</div>
+	</div>
+</div>

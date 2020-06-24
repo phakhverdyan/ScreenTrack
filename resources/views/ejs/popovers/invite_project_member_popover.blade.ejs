@@ -1,0 +1,329 @@
+<div class="popover + is-invite-project-member">
+	<div class="popover-header">
+		<div class="popover-header__title">{{ __('popovers/invite_project_member.add_new_user') }}</div>
+		<button type="button" class="[ popover-header__close-button ] btn">&times;</button>
+	</div>
+	<div class="popover-content + has-footer">
+		<form class="[ popover__invitation-form ] collapse show">
+			<div class="[ popover__user-type-block ] collapse show">
+				<label class="mb-1">
+					{{ __('popovers/invite_project_member.who_you_want') }}
+				</label>
+				<ul class="[ popover__user-type-pills ] nav nav-pills nav-fill mb-2">
+					<li class="nav-item">
+						<a class="nav-link active" href="#" data-value="FREELANCER">
+							{{ __('popovers/invite_project_member.freelancer') }}
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-value="EMPLOYER">
+							{{ __('popovers/invite_project_member.employer') }}
+						</a>
+					</li>
+				</ul>
+				<div class="[ popover__user-type-freelancer-text ] alert alert-info mb-2 collapse" role="alert">
+					{!! __('popovers/invite_project_member.freelancer_text') !!}
+				</div>
+				<div class="[ popover__user-type-employer-text ] alert alert-info mb-2 collapse" role="alert">
+					{!! __('popovers/invite_project_member.employer_text') !!}
+				</div>
+			</div>
+			<div class="d-none">
+				<div>
+					<div class="user-type-pills-item__description">
+						A user that will get paid & be tracked with screenshots
+					</div>
+					<div class="user-type-pills-item__affiliate-text">Get $100 per referal</div>
+				</div>
+				<div>
+					<div class="user-type-pills-item__description">
+						The user that will <b>pay</b> with a credit card and manage the project
+					</div>
+					<div class="user-type-pills-item__affiliate-text">Get $150 per referal</div>
+				</div>
+			</div>
+			<div class="form-group mb-2">
+				<label class="mb-1" for="popover-<%- id %>__select">
+					{{ __('popovers/invite_project_member.select_user_to_invite') }}
+				</label>
+				<select class="[ popover-member-select ] custom-select" id="popover-<%- id %>__select"></select>
+				<input type="hidden" name="user[id]" disabled>
+				<input type="hidden" name="user[email]" disabled>
+			</div>
+			<div class="[ popover__invitation-form__name-block ] form-row mb-2 collapse">
+				<div class="col">
+					<label for="popover-<%- id %>__first-name" class="mb-1">
+						{{ __('popovers/invite_project_member.first_name') }}
+					</label>
+					<input
+						type="text"
+						name="user[first_name]"
+						class="form-control + is-first-capitalized"
+						placeholder="{{ __('popovers/invite_project_member.first_name') }}"
+						data-name="user.first_name"
+						id="popover-<%- id %>__first-name"
+					>
+					<div class="invalid-feedback"></div>
+				</div>
+				<div class="col">
+					<label for="popover-<%- id %>__last-name" class="mb-1">
+						{{ __('popovers/invite_project_member.last_name') }}
+					</label>
+					<input
+						type="text"
+						name="user[last_name]"
+						class="form-control + is-first-capitalized"
+						placeholder="{{ __('popovers/invite_project_member.last_name') }}"
+						data-name="user.last_name"
+						id="popover-<%- id %>__last-name"
+					>
+					<div class="invalid-feedback"></div>
+				</div>
+			</div>
+			<div class="[ popover__invitation-parameters-block ] collapse">
+				<div class="[ popover__invitation-form__role-block ] form-group mb-2 collapse">
+					<label for="popover-<%- id %>__role" class="mb-1">
+						{{ __('popovers/invite_project_member.choose_permissions') }}
+					</label>
+					<select class="custom-select" id="popover-<%- id %>__role"></select>
+					<input type="hidden" name="project_member[role]">
+				</div>
+				<div class="[ popover__invitation-form__boards-block ] form-group mb-2 collapse show">
+					<label for="popover-<%- id %>__boards" class="mb-1">
+						{{ __('popovers/invite_project_member.assign_to_boards') }}
+					</label>
+					<select
+                        class="custom-select"
+                        multiple="multiple"
+                        name="project_member[board_ids][]"
+                        id="popover-<%- id %>__boards"
+                    >
+						<% project.boards.forEach(function(board, board_index) { %>
+							<option value="<%- board.id %>" <%- board_index == 0 ? 'selected' : '' %>>
+								<%= board.name %>
+							</option>
+						<% }); %>
+					</select>
+				</div>
+				<div class="[ popover__have-contract-text ] alert alert-success d-none" role="alert">
+					{{ __('popovers/invite_project_member.this_user_already_has_contract_with_you') }}
+				</div>
+				{{--
+					<div class="[ popover__with-protection-text ] alert alert-success d-none" role="alert">
+						<b>{{ __('popovers/invite_project_member.you_re_safe') }}</b>
+						{{ __('popovers/invite_project_member.you_will_track_tasks_with_screenshots') }}
+					</div>
+					<div class="[ popover__without-protection-text ] alert alert-danger d-none" role="alert">
+						<b>{{ __('popovers/invite_project_member.be_careful') }}</b>
+						{{ __('popovers/invite_project_member.tasks_wont_be_tracked_with_screenshots') }}
+					</div>
+				--}}
+				<div class="[ popover__contract-block ] collapse">
+					<hr>
+					<div>
+						<label class="mb-1">
+							How do you wish to pay/transact with this user?
+						</label>
+						<ul class="[ popover__contract-payment-type-pills ] nav nav-pills nav-fill mb-2">
+							<li class="nav-item">
+								<a class="nav-link active" href="#" data-value="DIRECT">
+									Direct
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-value="ESCROW">
+									Escrow
+								</a>
+							</li>
+						</ul>
+						<input type="hidden" name="contract[payment_type]" disabled>
+						<div class="[ popover__contract-payment-type-direct-text ] alert alert-info mb-2 collapse" role="alert">
+							I will not use this platform to pay the user, I will pay him directly in other ways.
+						</div>
+						<div class="[ popover__contract-payment-type-escrow-text ] alert alert-info mb-2 collapse" role="alert">
+							Use ScreenTrack's Payment Protection Escrow (Requires Credit Card).
+						</div>
+					</div>
+					<div class="d-none">
+						<label class="mb-1">
+							{{ __('popovers/invite_project_member.choose_contract_type') }}
+						</label>
+						<ui class="[ popover__contract-type-pills ] nav nav-pills nav-fill mb-2">
+							<li class="nav-item">
+								<a class="nav-link active" href="#" data-value="HOURLY">
+									{{ __('popovers/invite_project_member.hourly') }}
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-value="FIXED_PRICE">
+									{{ __('popovers/invite_project_member.fix_price') }}
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-value="">
+									{{ __('popovers/invite_project_member.no_contract') }}
+								</a>
+							</li>
+						</ui>
+						<input type="hidden" name="contract[type]" disabled>
+					</div>
+					<div class="[ popover__contract-details-block ] form-group collapse">
+						<div class="form-row mb-2">
+							<div
+                                class="[ popover__invitation-form__hourly-rate-block ] col collapse"
+                                style="max-width: 115px;"
+							>
+								<label for="popover-<%- id %>__hourly-rate" class="mb-1">
+									{{ __('popovers/invite_project_member.hourly_rate') }}
+								</label>
+								<div class="form-control-group + has-prefix has-postfix" style="position: relative;">
+									<span class="form-control-group__prefix">$</span>
+									<input
+                                        value=""
+                                        name="contract[hourly_rate]"
+                                        data-name="contract.hourly_rate"
+                                        class="form-control text-right"
+                                        type="number"
+                                        step="0.01"
+                                        min="0"
+                                        max="999"
+                                        id="popover-<%- id %>__hourly-rate"
+									>
+									<span class="form-control-group__postfix">/h</span>
+								</div>
+								<div class="invalid-feedback"></div>
+							</div>
+							<div class="col">
+								<label for="popover-<%- id %>__contract-title" class="mb-1">
+									{{ __('popovers/invite_project_member.contract_title') }}
+								</label>
+								<input
+                                    class="form-control"
+                                    name="contract[title]"
+                                    data-name="contract.title"
+                                    placeholder="{{ __('popovers/invite_project_member.e_g_junior_designer') }}"
+                                    id="popover-<%- id %>__contract-title"
+								>
+								<div class="invalid-feedback"></div>
+							</div>
+						</div>
+						<div class="popover__milestone-block collapse">
+							<div class="popover__milestone-items"></div>
+							<div class="d-flex justify-content-end">
+								<button class="[ popover__add-milestone-button ] btn btn-primary btn-sm">
+									{{ __('popovers/invite_project_member.add_milestone') }}
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="[ popover__invitation-form__credit-card-block ] form-group collapse">
+						<label for="popover-<%- id %>__credit-card" class="mb-1">
+							{{ __('popovers/invite_project_member.choose_payment_protection_method') }}
+						</label>
+						<b style="float: right;">{{ __('popovers/invite_project_member.zero_commission') }}</b>
+						<div class="[ stripe-card ] mb-2">
+							<div class="stripe-card-element" id="popover-<%- id %>__credit-card"></div>
+							<div class="stripe-card-errors d-none" role="alert"></div>
+						</div>
+						<input type="hidden" name="stripe_token_id">
+					</div>
+				</div>
+			</div>
+			<div class="form-group mt-3 mb-2">
+				<button type="submit" class="form-control btn btn-primary">
+					{{ __('popovers/invite_project_member.add_to_project') }}
+				</button>
+			</div>
+		</form>
+		<div class="[ popover__member-was-added-block ] collapse">
+			<div class="[ popover__member-was-added-block__text ] alert alert-success mb-2" role="alert">
+				{{ __('popovers/invite_project_member.this_user_was_added_to_your_project') }}
+			</div>
+			<div class="text-right">
+				<button type="button" class="[ popover__member-was-added-block__close-button ] btn btn-primary">
+					{{ __('popovers/invite_project_member.close') }}
+				</button>
+			</div>
+		</div>
+		{{--
+			<hr>
+			<div class="[ popover__invitation-link-form ]">
+				<div class="form-group mb-1">
+					<input class="[ popover__invitation-link-form__url-input ] form-control">
+				</div>
+				<div class="form-group mb-1">
+					<div class="form-row">
+						<div class="col">
+							<button
+								type="button"
+								class="[ popover__invitation-link-form__delete-link ] form-control brn btn-danger"
+							>
+								{{ __('popovers/invite_project_member.delete_link') }}
+							</button>
+						</div>
+						<div class="col">
+							<button
+								type="button"
+								class="[ popover__invitation-link-form__copy-link ] form-control brn btn-success"
+							>
+								{{ __('popovers/invite_project_member.copy_link') }}
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		--}}
+	</div>
+</div>
+
+@push('ejs-templates')
+	<script type="text/ejs" id="invite-project-member-popover-milestone-item-template">
+		<div class="[ popover__milestone-item ] form-row mb-2 align-items-end" data-index="<%- index %>">
+			<div class="col">
+				<label for="popover-<%- id %>__milestone-<%- index %>-title" class="mb-1">
+					<%- __('popovers.invite_project_member.milestone_title', { step: (index + 1) }) %>
+				</label>
+				<input
+					class="form-control"
+					name="contract[milestones][<%- index %>][title]"
+					data-name="contract.milestones.<%- index %>.title"
+					placeholder="<%- __('popovers.invite_project_member.enter_milestone', { step: (index + 1) }) %>"
+					id="popover-<%- id %>__milestone-<%- index %>-title"
+					value="<%= title %>"
+				>
+				<div class="invalid-feedback"></div>
+			</div>
+			<div class="col" style="max-width: 120px;">
+				<label
+					for="popover-<%- id %>__milestone-<%- index %>-amount"
+					class="mb-1"
+				>
+					<%- __('popovers.invite_project_member.amount') %>
+				</label>
+				<div class="form-control-group + has-prefix" style="position: relative;">
+					<span class="form-control-group__prefix">$</span>
+					<input
+						name="contract[milestones][<%- index %>][amount]"
+						data-name="contract.milestones.<%- index %>.amount"
+						class="form-control text-right"
+						type="number"
+						step="1"
+						min="5"
+						id="popover-<%- id %>__milestone-<%- index %>-amount"
+						value="<%= amount %>"
+					>
+				</div>
+				<div class="invalid-feedback"></div>
+			</div>
+			<div style="margin-right: -0.5rem;">
+				<button
+					class="[ popover__milestone-item__remove-button ] btn"
+					type="button"
+					<%- (index > 0 ? '' : 'disabled') %>
+				>
+					&times;
+				</button>
+			</div>
+		</div>
+	</script>
+@endpush

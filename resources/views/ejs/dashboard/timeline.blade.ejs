@@ -1,0 +1,17 @@
+<div class="[ timeline ] + is-day">
+	<div class="[ timeline-header ]">
+		<div class="[ timeline-date ]">
+			<button type="button" class="[ timeline-date__previous-button ] btn">
+				<img src="{{ asset_no_cache('img/menu-icons/left-arrow.svg') }}" alt="">
+			</button>
+			<a href="#" class="[ timeline-date__selected-value ]"><%= moment(timeline.selected_date).format('ddd, MMM D, YYYY') %></a>
+			<button type="button" class="[ timeline-date__next-button ] btn">
+				<img src="{{ asset_no_cache('img/menu-icons/right-arrow.svg') }}" alt="">
+			</button>
+		</div>
+	</div>
+	<div class="[ timeline-loader ]"></div>
+	<div class="[ timeline-body ]"></div>
+</div>
+
+@ejs_template('dashboard.timeline_body')

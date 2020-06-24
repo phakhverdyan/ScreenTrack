@@ -1,0 +1,29 @@
+/.idea
+node_modules
+/public/hot
+/public/storage
+/public/builds
+/public/binaries
+/storage/*.key
+/storage/app/*
+!/storage/app/geo/
+/vendor
+.env
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/public/uploads
+
+# ignore nginx configs & logs
+
+/nginx.conf
+/nginx.error.log
+/nginx.access.log
+
+# ignore executable files
+
+*.exe
+*.nupkg
+*.dmg

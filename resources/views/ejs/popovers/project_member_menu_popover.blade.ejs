@@ -1,0 +1,156 @@
+<div class="popover is-project-member-menu">
+	<div class="popover-page is-default is-shown">
+		<div class="popover-header">
+			<div class="popover-profile">
+				<div class="popover-profile__image" style="background-image: url('<%- project_member.user.image.urls.tiny %>');"></div>
+				<div class="popover-profile__status + <%- project_member.user.is_online ? 'is-online' : '' %>"></div>
+				<div class="popover-profile__title">
+					<%= project_member.user.title %>
+				</div>
+				<% if (project_member.contract || project_member.user.professional_title) { %>
+					<span class="popover-profile__professional-title">
+						<%= project_member.contract && project_member.contract.title || project_member.user.professional_title %>
+					</span>
+				<% } %>
+				<% if (
+					project_member.role != 'OWNER'
+					&&
+					project_member.id != project.pivot.id
+					&&
+					[ 'OWNER', 'ADMINISTRATOR' ].indexOf(project.pivot.role) > -1
+				) { %>
+					<a href="#" class="popover-profile__role is-link text-nowrap">
+						<span><%= __('common.project_members.roles.' + project_member.role + '.extra_title') %></span>
+						(<%= __('popovers.project_member_menu.change_role') %>)
+					</a>
+				<% } else { %>
+					<span class="popover-profile__role">
+						<%= __('common.project_members.roles.' + project_member.role + '.extra_title') %>
+					</span>
+				<% } %>
+			</div>
+			<button type="button" class="[ popover-header__close-button ] btn">&times;</button>
+		</div>
+		<div class="popover-content">
+			<div class="[ popover-list ]">
+				<% if (project_member.user_id == project.pivot.user_id) { %>
+					<a href="#" class="[ popover-list-item ] + is-view-profile">
+						{{ __('client/popovers/project_member_menu.view_my_profile') }}
+					</a>
+				<% } else { %>
+					<a href="#" class="[ popover-list-item ] + is-view-profile">
+						{{ __('client/popovers/project_member_menu.view_profile') }}
+					</a>
+				<% } %>
+				<% if (project_member.user_id != project.pivot.user_id) { %>
+					<% if ([ 'OWNER', 'ADMINISTRATOR', 'MANAGER' ].indexOf(project.pivot.role) > -1) { %>
+						<a href="#" class="[ popover-list-item ] + is-view-timeline">
+							{{ __('client/popovers/project_member_menu.view_timeline') }}
+						</a>
+					<% } %>
+				<% } %>
+				<% if (project_member.user_id != project.pivot.user_id) { %>
+					<% if (project.pivot.role == 'OWNER') { %>
+						<a href="#" class="[ popover-list-item ] + is-edit-contract">
+							<span><%= (project_member.contract ?
+												__('popovers.project_member_menu.edit_contract')
+												:
+												__('popovers.project_member_menu.open_contract')
+								) %></span>
+						</a>
+					<% } %>
+				<% } %>
+				<% if (board_item && [ 'OWNER', 'ADMINISTRATOR', 'MANAGER' ].indexOf(project.pivot.role) > -1) { %>
+					<hr class="[ popover-list-separator ]">
+				<% } else if (
+					[ 'OWNER', 'ADMINISTRATOR' ].indexOf(project.pivot.role) > -1
+					&&
+					(project_member.role != 'OWNER' && project_member.id != project.pivot.id)
+				) { %>
+					<hr class="[ popover-list-separator ]">
+				<% } %>
+				<% if (board_item && [ 'OWNER', 'ADMINISTRATOR', 'MANAGER' ].indexOf(project.pivot.role) > -1) { %>
+					<a href="#" class="[ popover-list-item ] + is-unassign-from-task">
+						{{ __('popovers/project_member_menu.unassign_from_task') }}
+					</a>
+				<% } %>
+				<% if (project_board && [ 'OWNER', 'ADMINISTRATOR' ].indexOf(project.pivot.role) > -1) { %>
+					<% if ([ 'OWNER', 'ADMINISTRATOR' ].indexOf(project_member.role) < 0 && project_member.id != project.pivot.id) { %>
+						<a href="#" class="[ popover-list-item ] + is-remove-from-board">
+							{{ __('popovers/project_member_menu.remove_from_board') }}
+						</a>
+					<% } %>
+				<% } %>
+				<% if ([ 'OWNER', 'ADMINISTRATOR' ].indexOf(project.pivot.role) > -1) { %>
+					<% if (project_member.role != 'OWNER' && project_member.id != project.pivot.id) { %>
+						<a href="#" class="[ popover-list-item ] + is-remove-from-project">
+							{{ __('popovers/project_member_menu.remove_from_project') }}
+						</a>
+					<% } %>
+				<% } %>
+			</div>
+		</div>
+	</div>
+	<div class="popover-page is-remove-member">
+		<div class="popover-header">
+			<button type="button" class="[ popover-header__back-button ] btn">&lsaquo;</button>
+			<div class="popover-header__title">Remove <%= project_member.user.title %>?</div>
+			<button type="button" class="[ popover-header__close-button ] btn">&times;</button>
+		</div>
+		<div class="popover-content">
+			<form class="popover-content__form">
+				<div class="[ popover-content__alert ] alert alert-info mb-1 + is-default" role="alert">
+					<b class="text-nowrap"><%= project_member.user.title %></b> will be removed
+					from <b class="text-nowrap"><%= dashboard.selected_project.name %></b>
+					and will receive a notification.
+				</div>
+				<div class="[ popover-content__alert ] alert alert-info mb-1 + is-remove-from-all-projects d-none" role="alert">
+					<b class="text-nowrap"><%= project_member.user.title %></b> will be removed
+					from <b class="text-nowrap">all your projects</b>
+					and will receive a notification.
+				</div>
+				<div class="form-check mt-1 <%- (project.pivot.role == 'OWNER' ? '' : 'd-none') %>">
+					<input type="checkbox" class="form-check-input" id="popover-project-member-menu__remove-from-all-projects-checkbox" name="remove_from_all_my_projects" value="1">
+					<label class="form-check-label" for="popover-project-member-menu__remove-from-all-projects-checkbox">
+						Remove from all my projects
+					</label>
+				</div>
+				<div class="form-check mt-1 <%- (project.pivot.role == 'OWNER' ? '' : 'd-none') %>">
+					<input type="checkbox" class="form-check-input" name="close_contract" id="popover-project-member-menu__close-contract-checkbox" value="1">
+					<label class="form-check-label" for="popover-project-member-menu__close-contract-checkbox">
+						Close contract with this user
+					</label>
+				</div>
+				<button class="[ popover-content__remove-button ] btn btn-danger mt-2">
+					Remove <%= project_member.user.title %>
+				</button>
+			</form>
+		</div>
+	</div>
+	<div class="popover-page is-change-role">
+		<div class="popover-header">
+			<button type="button" class="[ popover-header__back-button ] btn">&lsaquo;</button>
+			<div class="popover-header__title">
+				<%= __('popovers.project_member_menu.change_role_of_someone', {
+					member_name: project_member.user.title,
+				}) %>
+			</div>
+			<button type="button" class="[ popover-header__close-button ] btn">&times;</button>
+		</div>
+		<div class="popover-content">
+			<div class="popover-list">
+				<% [
+					'CONTRACTOR',
+					'ADMINISTRATOR',
+				].forEach(function(role) { %>
+					<a href="#" class="popover-list-item <%- project_member.role == role ? 'is-selected' : '' %> <%- project.pivot.role != 'OWNER' && role == 'ADMINISTRATOR' ? 'is-disabled' : '' %>" data-key="<%- role %>">
+						<span>
+							<b class="d-block"><%= __('common.project_members.roles.' + role + '.extra_title') %></b>
+							<span class="d-block"><%= __('common.project_members.roles.' + role + '.description') %></span>
+						</span>
+					</a>
+				<% }); %>
+			</div>
+		</div>
+	</div>
+</div>

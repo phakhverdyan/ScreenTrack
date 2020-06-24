@@ -1,0 +1,35 @@
+<div class="popover is-project-board-members">
+	<div class="popover-header">
+		<div class="popover-header__title">{{ __('popovers/manage_project_board_members.add_members') }}</div>
+		<button type="button" class="[ popover-header__close-button ] btn">&times;</button>
+	</div>
+	<div class="popover-content + has-footer">
+		<select class="[ popover-member-select ] custom-select is-static"></select>
+		<form class="[ popover__invitation-form ] d-none">
+			<div class="form-group mb-2">
+				<div class="form-row">
+					<div class="col">
+						<label for="popover__invitation-form__first-name" class="mb-1 small">
+							{{ __('popovers/manage_project_board_members.first_name') }}
+						</label>
+						<input type="text" name="user[first_name]" class="form-control + is-first-capitalized" placeholder="{{ __('popovers/manage_project_board_members.first_name') }}" data-name="user.first_name" id="popover__invitation-form__first-name">
+						<div class="invalid-feedback"></div>
+					</div>
+					<div class="col">
+						<label for="popover__invitation-form__last-name" class="mb-1 small">
+							{{ __('popovers/manage_project_board_members.last_name') }}
+						</label>
+						<input type="text" name="user[last_name]" class="form-control + is-first-capitalized" placeholder="{{ __('popovers/manage_project_board_members.last_name') }}" data-name="user.last_name" id="popover__invitation-form__last-name">
+						<div class="invalid-feedback"></div>
+					</div>
+				</div>
+				<!-- CREDIT CARD -->
+				<!-- SALARY -->
+			</div>
+			<div class="form-group mb-0">
+				<button type="submit" class="btn btn-primary">{{ __('popovers/manage_project_board_members.add_to_board') }}</button>
+			</div>
+			<input type="hidden" name="user[email]">
+		</form>
+	</div>
+</div>

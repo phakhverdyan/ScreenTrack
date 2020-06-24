@@ -1,0 +1,444 @@
+<form class="modal fade  " tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog mw-100 w-75" role="document">
+		<div class="modal-content">
+			<button type="button" class="[ modal__close-button ] btn" data-dismiss="modal">&times;</button>
+			<div class="[ user-profile ]" >
+				<div class="row">
+					<div class="col-md-9">
+						<div class="[ user-profile__body ]">
+							<div class="[ user-profile__image ]" style="background-image: url(<%= user.image.urls.small %>)">
+								<span class="[ user-profile__status ] is-active"></span>
+							</div>
+							<div class="[ user-profile__info ]">
+								<h4 class="[ user-profile__name ]"><%= user.full_name %></h4>
+								<p>
+                                    <span class="[ user-profile__location-icon ]">
+                                        <img src="/img/maps-and-flags.svg" alt="">
+                                    </span>
+									<span class="[ user-profile__location-name ]"><%= user.locality.full_address %></span>
+									<!-- - -->
+									<!--<small class="[ user-profile__local-time ]">4:27 pm local time</small>-->
+								</p>
+							</div>
+						</div>
+						<!-- / user-profile__body -->
+
+						<div class="[ user-profile-tabs ]">
+							<ul class="nav nav-tabs">
+								<li class="[ user-profile-tabs__item ] active">
+									<a class="[ user-profile-tabs__link ]" data-toggle="tab"
+									   href="#user-profile-tabs__general-profile-tab">Main Profile</a>
+								</li>
+								<% user.specialized_profiles.forEach(function (item, key) { %>
+									<li class="[ user-profile-tabs__item ]">
+										<a class="[ user-profile-tabs__link ]" data-toggle="tab"
+										   href="#user-profile-tabs__skill-resume-tab-<%= key %>"><%= item.title %></a>
+									</li>
+								<% }); %>
+							</ul>
+							<div class="tab-content">
+								<div id="user-profile-tabs__general-profile-tab"
+									 class="[ user-profile-tabs__tab-pane ] tab-pane active">
+									<b><%= user.professional_title %></b>
+									<p><%= user.professional_description %></p>
+									<!--<a class="[ user-profile-tabs__view-more ]" href="">View more</a>-->
+								</div>
+								<% user.specialized_profiles.forEach(function (item, key) { %>
+									<div id="user-profile-tabs__skill-resume-tab-<%= key %>"
+										 class="[ user-profile-tabs__tab-pane ] tab-pane">
+										<p><%= item.description %></p>
+										<!--<a class="[ user-profile-tabs__view-more ]" href="">View more</a>-->
+									</div>
+								<% }); %>
+							</div>
+						</div>
+						<div class="[ user-profile__messages ]">
+							<div class="[ user-profile-message ]">
+								<img class="[ user-profile-message__author-image ]" src="/img/employeer-img-2.png"
+									 alt="">
+								<p class="[ user-profile-message__time ]">14:34</p>
+								<p class="[ user-profile-message__user ]">Full Stack Lorem ipsum dolor sit amet,
+									consectetur adipiscing elit. Sed et suscipitleo.
+								</p>
+							</div>
+							<div class="[ user-profile-message ] is-right">
+								<img class="[ user-profile-message__author-image ]" src="/img/employeer-img-2.png"
+									 alt="">
+								<p class="[ user-profile-message__time ]">14:34</p>
+								<p class="[ user-profile-message__user ]">
+									Full Stack Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et
+									suscipitleo.Full Stack Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+									etsuscipit leo.Full Stack Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Sedet suscipit leo.
+								</p>
+							</div>
+							<div class="[ user-profile-message ]">
+								<img class="[ user-profile-message__author-image ]" src="/img/employeer-img-2.png"
+									 alt="">
+								<p class="[ user-profile-message__time ]">14:34</p>
+								<p class="[ user-profile-message__user ]">
+									Full Stack Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et suscipit
+									leo.
+								</p>
+							</div>
+							<div class="[ user-profile-message ] is-right">
+								<img class="[ user-profile-message__author-image ]" src="/img/employeer-img-2.png"
+									 alt="">
+								<p class="[ user-profile-message__time ]">14:34</p>
+								<p class="[ user-profile-message__user ]">
+									Full Stack Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et suscipit
+									leo.
+								</p>
+							</div>
+						</div>
+
+						<form class="[ user-profile__send-message-form ]" action="">
+							<img class="[ user-profile__send-message-form__author-image ]"
+								 src="/img/employeer-img-2.png" alt="">
+							<input class="form-control" type="text">
+							<button class="btn btn-primary" type="submit">Send</button>
+						</form>
+						<div class="[ user-profile-timeline ]">
+							<div class="[ user-profile-timeline__select-date ]">
+								<select name="">
+									<option selected value="">Week</option>
+									<option value="">Month</option>
+								</select>
+								<div class="[ user-profile-timeline__day-select ]">
+									<button type="button"
+											class="[ user-profile-timeline__previous-button ] btn btn-secondary">
+										<img src="/img/menu-icons/left-arrow.svg" alt="">
+									</button>
+									<p class="[ user-profile-timeline__current-day ]">
+										Mon, June 10, 2019
+										<span class="[ user-profile-timeline__calendar-icon ]">
+                                            <img src="/img/calendar.svg" alt="">
+                                        </span>
+									</p>
+									<button type="button"
+											class="[ user-profile-timeline__next-button ] btn btn-secondary">
+										<img src="/img/menu-icons/right-arrow.svg" alt="">
+									</button>
+								</div>
+							</div>
+							<div class="[ user-profile-timeline__days ]">
+								<div class="[ user-profile-timeline__day ]  text-center">
+									<h5 class="[ user-profile-timeline__day-name ]">Mon</h5>
+									<p class="[ user-profile-timeline__day-date ]">1</p>
+								</div>
+								<div class="[ user-profile-timeline__day ] text-center">
+									<h5 class="[ user-profile-timeline__day-name ]">Tue</h5>
+									<p class="[ user-profile-timeline__day-date ]">2</p>
+								</div>
+								<div class="[ user-profile-timeline__day ] text-center">
+									<h5 class="[ user-profile-timeline__day-name ]">Wed</h5>
+									<p class="[ user-profile-timeline__day-date ]">3</p>
+								</div>
+								<div class="[ user-profile-timeline__day ] text-center">
+									<h5 class="[ user-profile-timeline__day-name ]">Thu</h5>
+									<p class="[ user-profile-timeline__day-date ]">4</p>
+								</div>
+								<div class="[ user-profile-timeline__day ] text-center">
+									<h5 class="[ user-profile-timeline__day-name ]">Fri</h5>
+									<p class="[ user-profile-timeline__day-date ]">5</p>
+								</div>
+								<div class="[ user-profile-timeline__day ] text-center">
+									<h5 class="[ user-profile-timeline__day-name ]">Sat</h5>
+									<p class="[ user-profile-timeline__day-date ]">6</p>
+								</div>
+								<div class="[ user-profile-timeline__day ] is-current text-center">
+									<h5 class="[ user-profile-timeline__day-name ]">Sun</h5>
+									<p class="[ user-profile-timeline__day-date ]">7</p>
+								</div>
+							</div>
+
+							<div class="[ user-profile-timeline__day-preview ]">
+								<div class="[ user-profile-timeline__day-preview__total-hour ]">
+									<h4>Daily Total: <span>4h 45min</span></h4>
+								</div>
+								<!-- Day timeline-->
+								<div class="[ user-profile-timeline__day-preview__timeline ]">
+									<div class="[ user-profile-timeline__day-preview__timeline-hour ]">
+										<h4>7:00 am - 8:00 am <span>total time worked: 0:48:08</span></h4>
+									</div>
+									<div class="[ user-profile-timeline__day-preview__timeline-row ]">
+										<div class="[ user-profile-timeline__day-preview__content ]" data-toggle="modal"
+											 data-target="#screenshot-preview">
+											<div class="[ user-profile-timeline__day-preview__screenshot-content ]">
+												<img class="[ user-profile-timeline__day-preview__screenshot-content-image ]"
+													 src="/img/screenshot-img.png" alt="">
+												<canvas
+														class="[ user-profile-timeline__day-preview__screenshot-content-graph ]"
+														id="chart-07" width="100%" height="60px"></canvas>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot-content-activity ]">
+													<p><span>34</span> Keys</p>
+													<p><span>14</span> Clicks</p>
+												</div>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot__content-timestamp ]">
+													<p>7:00 - 7:10</p>
+												</div>
+											</div>
+										</div>
+										<div class="[ user-profile-timeline__day-preview__content ]">
+											<div class="[ user-profile-timeline__day-preview__screenshot-content ]">
+												<img class="[ user-profile-timeline__day-preview__screenshot-content-image ]"
+													 src="/img/screenshot-img.png" alt="">
+												<canvas
+														class="[ user-profile-timeline__day-preview__screenshot-content-graph ]"
+														id="chart-02" width="100%" height="60px"></canvas>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot-content-activity ]">
+													<p><span>34</span> Keys</p>
+													<p><span>14</span> Clicks</p>
+												</div>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot__content-timestamp ]">
+													<p>7:00 - 7:10</p>
+												</div>
+											</div>
+										</div>
+										<div class="[ user-profile-timeline__day-preview__content ]">
+											<div class="[ user-profile-timeline__day-preview__screenshot-content ]">
+												<img class="[ user-profile-timeline__day-preview__screenshot-content-image ]"
+													 src="/img/screenshot-img.png" alt="">
+												<canvas
+														class="[ user-profile-timeline__day-preview__screenshot-content-graph ]"
+														id="chart-03" width="100%" height="60px"></canvas>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot-content-activity ]">
+													<p><span>34</span> Keys</p>
+													<p><span>14</span> Clicks</p>
+												</div>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot__content-timestamp ]">
+													<p>7:00 - 7:10</p>
+												</div>
+											</div>
+										</div>
+										<div class="[ user-profile-timeline__day-preview__content ]">
+											<div class="[ user-profile-timeline__day-preview__screenshot-content ]">
+												<img class="[ user-profile-timeline__day-preview__screenshot-content-image ]"
+													 src="/img/screenshot-img.png" alt="">
+												<canvas
+														class="[ user-profile-timeline__day-preview__screenshot-content-graph ]"
+														id="chart-04" width="100%" height="60px"></canvas>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot-content-activity ]">
+													<p><span>34</span> Keys</p>
+													<p><span>14</span> Clicks</p>
+												</div>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot__content-timestamp ]">
+													<p>7:00 - 7:10</p>
+												</div>
+											</div>
+										</div>
+										<div class="[ user-profile-timeline__day-preview__content ]">
+											<div class="[ user-profile-timeline__day-preview__screenshot-content ]">
+												<img class="[ user-profile-timeline__day-preview__screenshot-content-image ]"
+													 src="/img/screenshot-img.png" alt="">
+												<canvas
+														class="[ user-profile-timeline__day-preview__screenshot-content-graph ]"
+														id="chart-05" width="100%" height="60px"></canvas>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot-content-activity ]">
+													<p><span>34</span> Keys</p>
+													<p><span>14</span> Clicks</p>
+												</div>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot__content-timestamp ]">
+													<p>7:00 - 7:10</p>
+												</div>
+											</div>
+										</div>
+										<div class="[ user-profile-timeline__day-preview__content ]">
+											<div class="[ user-profile-timeline__day-preview__screenshot-content ]">
+												<img class="[ user-profile-timeline__day-preview__screenshot-content-image ]"
+													 src="/img/screenshot-img.png" alt="">
+												<canvas
+														class="[ user-profile-timeline__day-preview__screenshot-content-graph ]"
+														id="chart-06" width="100%" height="60px"></canvas>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot-content-activity ]">
+													<p><span>34</span> Keys</p>
+													<p><span>14</span> Clicks</p>
+												</div>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot__content-timestamp ]">
+													<p>7:00 - 7:10</p>
+												</div>
+											</div>
+										</div>
+										<div class="[ user-profile-timeline__day-preview__content ]">
+											<div class="[ user-profile-timeline__day-preview__screenshot-content ]">
+												<img class="[ user-profile-timeline__day-preview__screenshot-content-image ]"
+													 src="/img/screenshot-img.png" alt="">
+												<canvas
+														class="[ user-profile-timeline__day-preview__screenshot-content-graph ]"
+														id="chart" width="100%" height="60px"></canvas>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot-content-activity ]">
+													<p><span>34</span> Keys</p>
+													<p><span>14</span> Clicks</p>
+												</div>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot__content-timestamp ]">
+													<p>7:00 - 7:10</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- / Day timeline-->
+								<!-- Day timeline-->
+								<div class="[ user-profile-timeline__day-preview__timeline ]">
+									<div class="[ user-profile-timeline__day-preview__timeline-hour ]">
+										<h4>7:00 am - 8:00 am <span>total time worked: 0:48:08</span></h4>
+									</div>
+									<div class="[ user-profile-timeline__day-preview__timeline-row ]">
+										<div class="[ user-profile-timeline__day-preview__content ]">
+											<div class="[ user-profile-timeline__day-preview__screenshot-content ]">
+												<img class="[ user-profile-timeline__day-preview__screenshot-content-image ]"
+													 src="/img/screenshot-img.png" alt="">
+												<canvas
+														class="[ user-profile-timeline__day-preview__screenshot-content-graph ]"
+														id="chart-08" width="100%" height="60px"></canvas>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot-content-activity ]">
+													<p><span>34</span> Keys</p>
+													<p><span>14</span> Clicks</p>
+												</div>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot__content-timestamp ]">
+													<p>7:00 - 7:10</p>
+												</div>
+											</div>
+										</div>
+										<div class="[ user-profile-timeline__day-preview__content ]">
+											<div class="[ user-profile-timeline__day-preview__screenshot-content ]">
+												<img class="[ user-profile-timeline__day-preview__screenshot-content-image ]"
+													 src="/img/screenshot-img.png" alt="">
+												<canvas
+														class="[ user-profile-timeline__day-preview__screenshot-content-graph ]"
+														id="chart-09" width="100%" height="60px"></canvas>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot-content-activity ]">
+													<p><span>34</span> Keys</p>
+													<p><span>14</span> Clicks</p>
+												</div>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot__content-timestamp ]">
+													<p>7:00 - 7:10</p>
+												</div>
+											</div>
+										</div>
+										<div class="[ user-profile-timeline__day-preview__content ]">
+											<div class="[ user-profile-timeline__day-preview__screenshot-content ]">
+												<img class="[ user-profile-timeline__day-preview__screenshot-content-image ]"
+													 src="/img/screenshot-img.png" alt="">
+												<canvas
+														class="[ user-profile-timeline__day-preview__screenshot-content-graph ]"
+														id="chart-10" width="100%" height="60px"></canvas>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot-content-activity ]">
+													<p><span>34</span> Keys</p>
+													<p><span>14</span> Clicks</p>
+												</div>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot__content-timestamp ]">
+													<p>7:00 - 7:10</p>
+												</div>
+											</div>
+										</div>
+										<div class="[ user-profile-timeline__day-preview__content ]">
+											<div class="[ user-profile-timeline__day-preview__screenshot-content ]">
+												<img class="[ user-profile-timeline__day-preview__screenshot-content-image ]"
+													 src="/img/screenshot-img.png" alt="">
+												<canvas
+														class="[ user-profile-timeline__day-preview__screenshot-content-graph ]"
+														id="chart-11" width="100%" height="60px"></canvas>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot-content-activity ]">
+													<p><span>34</span> Keys</p>
+													<p><span>14</span> Clicks</p>
+												</div>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot__content-timestamp ]">
+													<p>7:00 - 7:10</p>
+												</div>
+											</div>
+										</div>
+										<div class="[ user-profile-timeline__day-preview__content ]">
+											<div class="[ user-profile-timeline__day-preview__screenshot-content ]">
+												<img class="[ user-profile-timeline__day-preview__screenshot-content-image ]"
+													 src="/img/screenshot-img.png" alt="">
+												<canvas
+														class="[ user-profile-timeline__day-preview__screenshot-content-graph ]"
+														id="chart-12" width="100%" height="60px"></canvas>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot-content-activity ]">
+													<p><span>34</span> Keys</p>
+													<p><span>14</span> Clicks</p>
+												</div>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot__content-timestamp ]">
+													<p>7:00 - 7:10</p>
+												</div>
+											</div>
+										</div>
+										<div class="[ user-profile-timeline__day-preview__content ]">
+											<div class="[ user-profile-timeline__day-preview__screenshot-content ]">
+												<img class="[ user-profile-timeline__day-preview__screenshot-content-image ]"
+													 src="/img/screenshot-img.png" alt="">
+												<canvas
+														class="[ user-profile-timeline__day-preview__screenshot-content-graph ]"
+														id="chart-13" width="100%" height="60px"></canvas>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot-content-activity ]">
+													<p><span>34</span> Keys</p>
+													<p><span>14</span> Clicks</p>
+												</div>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot__content-timestamp ]">
+													<p>7:00 - 7:10</p>
+												</div>
+											</div>
+										</div>
+										<div class="[ user-profile-timeline__day-preview__content ]">
+											<div class="[ user-profile-timeline__day-preview__screenshot-content ]">
+												<img class="[ user-profile-timeline__day-preview__screenshot-content-image ]"
+													 src="/img/screenshot-img.png" alt="">
+												<canvas
+														class="[ user-profile-timeline__day-preview__screenshot-content-graph ]"
+														id="chart-14" width="100%" height="60px"></canvas>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot-content-activity ]">
+													<p><span>34</span> Keys</p>
+													<p><span>14</span> Clicks</p>
+												</div>
+												<div
+														class="[ user-profile-timeline__day-preview__screenshot__content-timestamp ]">
+													<p>7:00 - 7:10</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- / Day timeline-->
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<button class="[ user-profile__hire-button ] btn btn-primary">Hire freelancer</button>
+						<button class="[ user-profile__follow-button ] btn btn-primary">Follow</button>
+						<button class="[ user-profile__save-button ] btn btn-primary">Save to list</button>
+						<button class="[ user-profile__invite-button ] btn btn-primary">Invite to project</button>
+						<button class="[ user-profile__message-button ] btn btn-primary">Message</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

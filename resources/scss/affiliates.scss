@@ -1,0 +1,227 @@
+@keyframes float-launch-icon {
+    0% {
+        transform: translateX(3px) translateY(3px);
+    }
+    50% {
+        transform: translateX(-3px) translateY(-3px);
+    }
+    100% {
+        transform: translateX(3px) translateY(3px);
+    }
+}
+
+.affiliates_step_number {
+	position: absolute;
+	top: 0; left: -15px;
+	color: #2c58ff;
+	border: 2px solid #2c58ff;
+	border-radius: 50%;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	font-weight: bold;
+	background-color: #ffffff;
+}
+
+.affiliates_step_content {
+	position: relative;
+	border-left: 1px solid #8CADFF;
+	padding-left: 40px;
+	margin: 20px 0 0 14px;
+}
+
+.affiliates_slider_estimated {
+	color: #0a0a0a;
+	font-size: 20px;
+}
+
+.affiliates_slider_estimated p {
+	color: #0a0a0a;
+}
+
+.affiliates_slider_price {
+	border-radius: 3px;
+	color: #00c566;
+	font-weight: bold;
+	font-size: 40px;
+	margin-right: 10px;
+}
+
+.affiliates_step_content_payment-type {
+	opacity: 0.2;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.affiliates_step_content_payment-type::before {
+	padding: 0;
+}
+.affiliates_step_content_payment-type {
+	line-height: 38px;
+}
+
+.affiliates_step_content_payment-type:focus,
+.affiliates_step_content_payment-type:active,
+.affiliates_step_content_payment-type.focus {
+	box-shadow: none;
+	outline: none;
+}
+
+.affiliates_step_content_payment-type.active {
+	opacity: 1;
+}
+
+.affiliates_step_content_payment-type .checked {
+	display: none;
+}
+
+.affiliates_step_content_payment-type.active .checked {
+	display: inline-block;
+}
+
+.affiliates_video {
+	background-color: #f0f3ff;
+	height: 100%;
+	border-top-left-radius: 120px;
+	border-bottom-right-radius: 120px;
+}
+
+.sharethis-inline-share-buttons#st-1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.sharethis-inline-share-buttons#st-1 .st-btn {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.sharethis-inline-share-buttons#st-1 .st-btn:not(.st-first) {
+	margin-left: 5px;
+	margin-right: 0;
+}
+
+/*RANGE SLIDER*/
+input[type="range"] {
+	width: 300px;
+	background: transparent;
+}
+/*###################################*/
+/*###########Responsive Range########*/
+/*###################################*/
+/*##############Core Style###########*/
+
+input[type="range"] {
+	-webkit-appearance: none;
+	width: 100%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+	outline: none;
+}
+
+input[type="range"]::-ms-track {
+	width: 100%;
+	cursor: pointer;
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+}
+/*#############Thumb##############*/
+
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 25px;
+	width: 25px;
+	background: #2c58ff;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-top: -9px;
+}
+
+input[type="range"]::-moz-range-thumb {
+	height: 25px;
+	width: 25px;
+	background: #2c58ff;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb {
+	height: 25px;
+	width: 25px;
+	background: #2c58ff;
+	border-radius: 3px;
+	cursor: pointer;
+}
+/*#############Track##############*/
+
+input[type="range"]::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 6px;
+	cursor: pointer;
+	background: #adbeff;
+	border-radius: 3px;
+}
+
+input[type="range"]:active::-webkit-slider-runnable-track {
+	background: #adbeff;
+}
+
+input[type="range"]::-moz-range-track {
+	width: 100%;
+	height: 6px;
+	cursor: pointer;
+	background: #adbeff;
+	border-radius: 3px;
+}
+
+input[type="range"]::-ms-track {
+	width: 100%;
+	height: 6px;
+	cursor: pointer;
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+	border-radius: 3px;
+}
+
+input[type="range"]::-ms-fill-lower {
+	background: #ccc;
+}
+
+input[type="range"]:focus::-ms-fill-lower {
+	background: #ddd;
+}
+
+input[type="range"]::-ms-fill-upper {
+	background: #ccc;
+}
+
+input[type="range"]:focus::-ms-fill-upper {
+	background: #ddd;
+}
+
+@media (max-width: 992px) {
+	.affiliates_title {
+		font-size: 16px;
+	}
+
+	.affiliates_title img {
+		width: 30px;
+		margin-right: 7px;
+	}
+
+	#affiliates_freelancers_range,
+	#affiliates_employers_range,
+	#affiliates_users_range {
+		width: 85%;
+	}
+}

@@ -1,0 +1,26 @@
+<?php
+
+return array (
+  'invite' => 'Пригласить',
+  'invite_or_track' => 'Пригласить / Отслеживать',
+  'enter_feedback' => 'Напишите отзыв',
+  'my_companies' => 'Мои компании',
+  'my_contracts' => 'Мои контракты',
+  'edit_profiles' => 'Редактирование профилей',
+  'change_password' => 'Изменить пароль',
+  'projects' => 'Проекты',
+  'contacts' => 'Контракты',
+  'passed_interviews' => 'Пройденные интервью',
+  'billing' => 'Биллинг',
+  'invoices' => 'Счета',
+  'earnings' => 'Прибыль',
+  'spendings' => 'Расходы',
+  'reports' => 'Отчеты',
+  'log_out' => 'Выход',
+  'affiliates' => 'Филиалы',
+  'my_referrals' => 'Мои рефералы',
+  'download_time_tracker_app' => 'Скачать приложение Time-Tracker',
+  'add_user' => 'Добавить Пользователя',
+  'new_project' => 'Новый',
+  'add_contract' => 'Добавить Контракт',
+);

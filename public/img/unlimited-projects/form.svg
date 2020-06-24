@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="953.26" height="955.85" viewBox="0 0 953.26 955.85">
+  <title>intercAsset 27</title>
+  <g id="4789c7d0-699e-4ef4-82a9-6c2ffbb7bfb5" data-name="Layer 2">
+    <g id="74903cc6-f47b-4b37-b536-851279fc134b" data-name="Layer 1">
+      <g>
+        <rect y="2.59" width="953.26" height="953.26" rx="14.25" ry="14.25" fill="#f7f7f7"/>
+        <path d="M14.25,0H939a14.25,14.25,0,0,1,14.25,14.25V75.89a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V14.25A14.25,14.25,0,0,1,14.25,0Z" fill="#e8e8e8"/>
+        <circle cx="59.21" cy="37.94" r="16.1" fill="#e74c3c"/>
+        <circle cx="110.68" cy="37.94" r="16.1" fill="#f1c40f"/>
+        <circle cx="162.14" cy="37.94" r="16.1" fill="#2ecc71"/>
+        <rect x="58.58" y="155.7" width="825.45" height="106.51" rx="9.63" ry="9.63" fill="#e8e8e8"/>
+        <rect x="55.92" y="734.84" width="825.45" height="146.45" rx="9.63" ry="9.63" fill="#2979ff"/>
+        <rect x="61.24" y="303.48" width="825.45" height="386.1" rx="9.63" ry="9.63" fill="#e8e8e8"/>
+        <g>
+          <rect x="111.83" y="192.98" width="194.38" height="31.95" rx="6" ry="6" fill="#c1c1c1"/>
+          <rect x="327.52" y="194.31" width="146.45" height="31.95" rx="6" ry="6" fill="#c1c1c1"/>
+          <rect x="497.93" y="194.31" width="191.72" height="31.95" rx="6" ry="6" fill="#c1c1c1"/>
+        </g>
+        <rect x="111.83" y="350.08" width="194.38" height="20.65" rx="3.88" ry="3.88" fill="#c1c1c1"/>
+        <rect x="327.52" y="350.94" width="146.45" height="20.65" rx="3.88" ry="3.88" fill="#c1c1c1"/>
+        <rect x="497.93" y="350.94" width="191.72" height="20.65" rx="3.88" ry="3.88" fill="#c1c1c1"/>
+        <rect x="244.97" y="384.5" width="194.38" height="20.65" rx="3.88" ry="3.88" fill="#c1c1c1"/>
+        <rect x="460.65" y="385.36" width="146.45" height="20.65" rx="3.88" ry="3.88" fill="#c1c1c1"/>
+        <rect x="111.83" y="385.36" width="106.51" height="20.65" rx="3.88" ry="3.88" fill="#c1c1c1"/>
+        <rect x="631.07" y="385.36" width="191.72" height="20.65" rx="3.88" ry="3.88" fill="#c1c1c1"/>
+        <rect x="111.83" y="420.63" width="194.38" height="20.65" rx="3.88" ry="3.88" fill="#c1c1c1"/>
+        <rect x="327.52" y="421.49" width="146.45" height="20.65" rx="3.88" ry="3.88" fill="#c1c1c1"/>
+        <rect x="497.93" y="421.49" width="191.72" height="20.65" rx="3.88" ry="3.88" fill="#c1c1c1"/>
+        <rect x="244.97" y="455.05" width="194.38" height="20.65" rx="3.88" ry="3.88" fill="#c1c1c1"/>
+        <rect x="460.65" y="455.91" width="146.45" height="20.65" rx="3.88" ry="3.88" fill="#c1c1c1"/>
+        <rect x="111.83" y="455.91" width="106.51" height="20.65" rx="3.88" ry="3.88" fill="#c1c1c1"/>
+        <rect x="710.95" y="421.49" width="106.51" height="20.65" rx="3.88" ry="3.88" fill="#c1c1c1"/>
+        <rect x="631.07" y="455.91" width="191.72" height="20.65" rx="3.88" ry="3.88" fill="#c1c1c1"/>
+        <rect x="111.85" y="491.2" width="194.38" height="20.65" rx="3.88" ry="3.88" fill="#c1c1c1"/>
+        <rect x="327.53" y="492.06" width="146.45" height="20.65" rx="3.88" ry="3.88" fill="#c1c1c1"/>
+        <rect x="497.94" y="492.06" width="191.72" height="20.65" rx="3.88" ry="3.88" fill="#c1c1c1"/>
+        <rect x="364.79" y="793.42" width="191.72" height="31.95" rx="6" ry="6" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

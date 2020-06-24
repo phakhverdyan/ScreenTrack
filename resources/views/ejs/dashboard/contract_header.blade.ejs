@@ -1,0 +1,47 @@
+<div class="row">
+	<div class="col-2 py-3">
+		<div class="h5 font-weight-bold">{{ $contract->title }}</div>
+		<div>{{ __('common.contracts.types.' . $contract->type . '.title') }} Contract</div>
+		<div class="text-nowrap">
+			{{ $contract->created_at->format('M j, o') }}
+			&mdash;
+			{{ $contract->closed_at ? $contract->closed_at->format('M j, o') : 'Present' }}
+		</div>
+	</div>
+	<div class="col d-flex align-items-center">
+		<a href="#" class="[ contract-header__employer-user ] d-inline-flex align-items-center" title="{{ $contract->employer_user->full_name }}">
+			<img height="30px" class="mr-1" src="{{ $contract->employer_user->image->urls->tiny }}">
+			@if ($contract->employer_user_id != auth()->user()->id)
+				<span class="ml-1">{{ $contract->employer_user->full_name }}</span>
+			@endif
+		</a>
+		<span class="mx-1">&rarr;</span>
+		<a href="#" class="[ contract-header__employee-user ] d-inline-flex align-items-center" title="{{ $contract->employee_user->full_name }}">
+			<img height="30px" class="mr-1" src="{{ $contract->employee_user->image->urls->tiny }}">
+			@if ($contract->employee_user_id != auth()->user()->id)
+				<span class="ml-1">{{ $contract->employee_user->full_name }}</span>
+			@endif
+		</a>
+	</div>
+	<div class="col-4 d-flex justify-content-end align-items-center">
+		<div class="mb-1 text-right">
+			@if ($contract->employer_user_id == auth()->user()->id)
+				<% if (current_milestone && !current_milestone.payment_id) { %>
+					<button class="[ contract-header__activate-button ] btn btn-primary btn-sm mt-1">
+						Fund & Activate <b>$<%- number_format(current_milestone.amount, 2) %></b>
+					</button>
+				<% } %>
+				<% if (current_milestone && current_milestone.payment_id && !current_milestone.released_at) { %>
+					<button class="[ contract-header__release-button ] btn btn-primary btn-sm mt-1">
+						Release <b>$<%- number_format(current_milestone.amount, 2) %></b>
+					</button>
+				<% } %>
+			@endif
+			{{--
+				<button class="[ contract-header__close-contract-button ] btn btn-secondary btn-sm mt-1">
+					Close Contract
+				</button>
+			--}}
+		</div>
+	</div>
+</div>

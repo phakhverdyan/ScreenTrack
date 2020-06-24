@@ -1,0 +1,20 @@
+<div class="[ board-item ]" data-id="<%- item.id %>">
+    <div class="[ board-item-wrapper ]">
+        <div class="[ board-item-header ]">
+            <div class="[ board-item-header__target ]"></div>
+            <textarea class="[ board-item-header__title ]" spellcheck="false"><%= item.title %></textarea>
+            <a href="#" class="[ board-item-header__menu-button ] btn">&hellip;</a>
+        </div>
+        <div class="[ board-item__cover ]" style="background-image: url('<%- item.cover_url %>');"></div>
+        <div class="[ board-item-dropzone ]">
+            <span class="[ board-item-dropzone__text ]">{{ __('dashboard/project_tasks.add_file_to_card') }}</span>
+        </div>
+        <div class="[ board-item__loader ]"></div>
+        <div class="[ board-item-footer ]">
+            <div class="[ board-item__badges ]"></div>
+            <div class="[ board-item__members ]">
+                <button class="[ board-item__members__add-new-button ] btn btn-primary" title="{{ __('dashboard/project_tasks.assign_new_user') }}">+</button>
+            </div>
+        </div>
+    </div>
+</div>

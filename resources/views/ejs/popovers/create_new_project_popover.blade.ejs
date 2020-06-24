@@ -1,0 +1,19 @@
+<div class="popover is-create-new-project">
+	<div class="popover-header">
+		<div class="popover-header__title">{{ __('popovers/create_new_project.create_new_project') }}</div>
+		<button type="button" class="[ popover-header__close-button ] btn">&times;</button>
+	</div>
+	<div class="popover-content">
+		<form class="popover__form">
+			<div class="form-group">
+				<input type="text" name="project[name]" class="form-control" placeholder="{{ __('popovers/create_new_project.enter_project_name') }}" data-name="project.name" id="create-new-project-popover__name">
+				<div class="invalid-feedback"></div>
+			</div>
+			<div class="form-group mt-3 mb-2">
+				<button type="submit" class="form-control btn btn-primary">
+					{{ __('popovers/create_new_project.create_new_project') }}
+				</button>
+			</div>
+		</form>
+	</div>
+</div>

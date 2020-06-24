@@ -1,0 +1,26 @@
+<?php
+
+return array (
+  'invite' => 'Invite',
+  'invite_or_track' => 'Invite / Track',
+  'enter_feedback' => 'Enter feedback',
+  'my_companies' => 'My Companies',
+  'my_contracts' => 'My Contracts',
+  'edit_profiles' => 'Edit Profile(s)',
+  'change_password' => 'Change Password',
+  'projects' => 'Projects',
+  'contacts' => 'Contacts',
+  'passed_interviews' => 'Passed Interviews',
+  'billing' => 'Billing',
+  'invoices' => 'Invoices',
+  'earnings' => 'Earnings',
+  'spendings' => 'Spendings',
+  'reports' => 'Reports',
+  'log_out' => 'Log out',
+  'affiliates' => 'Affiliates',
+  'my_referrals' => 'My Referrals',
+  'download_time_tracker_app' => 'Download Time-Tracker App',
+  'add_user' => 'Add User to Project',
+  'new_project' => 'New',
+  'add_contract' => 'New Contract',
+);

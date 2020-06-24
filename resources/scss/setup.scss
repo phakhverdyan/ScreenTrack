@@ -1,0 +1,170 @@
+/* Fonts */
+/* Colors */
+section {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  height: 100%;
+}
+
+body {
+  font-family: "Gudea", sans-serif;
+  font-size: 1rem;
+}
+
+body p {
+  font-weight: 400;
+  color: #a9a9a9;
+}
+
+.small-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-box-shadow: 0 0 5px #f2f2f2;
+          box-shadow: 0 0 5px #f2f2f2;
+  padding: 22.5px 0;
+}
+
+.small-logo a {
+  text-decoration: none;
+  color: #2b363f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.small-logo a img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.create-project {
+  height: 100%;
+  padding-top: 50px;
+  width: 500px;
+}
+
+.create-project__page-title {
+  font-family: "Gudea", sans-serif;
+  font-size: 36px;
+}
+
+.create-project__form input.form-control {
+  padding: 22.5px 20px;
+}
+
+.create-project__form input:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.create-team {
+  height: 100%;
+  padding-top: 50px;
+  width: 500px;
+}
+
+.create-team__page-title {
+  font-family: "Gudea", sans-serif;
+  font-size: 36px;
+}
+
+.form__button-skip {
+  width: 40%;
+  padding: 13px;
+  border: 1px solid #a9a9a9;
+  color: #a9a9a9;
+  border-radius: 2px !important;
+  background-color: transparent;
+}
+
+.form__button-skip:hover {
+  background-color: #a9a9a9;
+  color: #ffffff;
+}
+
+.form__button-skip.is-loading {
+  background-color: #a9a9a9;
+  color: transparent;
+}
+
+.form__button-continue {
+  width: 40%;
+  padding: 13px;
+  border: none;
+  border-radius: 2px !important;
+  background-color: #2c58ff;
+  border: 1px solid #2c58ff;
+  -webkit-box-shadow: 0px 2px 20px -5px rgba(44, 88, 255, 0.83);
+          box-shadow: 0px 2px 20px -5px rgba(44, 88, 255, 0.83);
+  float: right;
+}
+
+.create-team__form input.form-control {
+  padding: 22.5px 20px;
+}
+
+.create-team__form input:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.add-people-list {
+  height: 100%;
+  padding-top: 50px;
+  /*width: 500px;*/
+}
+
+.add-people-list__page-title {
+  font-family: "Gudea", sans-serif;
+  font-size: 36px;
+}
+
+.col.col-md-6 {
+  padding: 0px 0 0 15px !important;
+  margin: 0px !important;
+}
+
+.col.col-md-3 {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.col.col-md-3:last-child {
+  padding-right: 15px !important;
+}
+
+.custom-select {
+  height: 100% !important;
+}
+
+select.custom.custom-select.custom-select-spl {
+  border-radius: 0px !important;
+  border-right: none !important;
+  border-left: none !important;
+}
+
+select.custom.custom-select.custom-select-spr {
+  border-bottom-left-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+}
+
+input.form-control {
+  border-bottom-right-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}

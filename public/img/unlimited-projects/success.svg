@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="506.19" viewBox="0 0 920 506.19">
+  <title>intercAsset 28</title>
+  <g id="113a0baf-6504-4790-8bfb-0ee587170235" data-name="Layer 2">
+    <g id="b8f1f97f-aa1d-4829-b010-e5d05953844f" data-name="Layer 1">
+      <rect y="2.5" width="920" height="503.69" rx="14.25" ry="14.25" fill="#f7f7f7"/>
+      <path d="M14.25,0h891.5A14.25,14.25,0,0,1,920,14.25v59a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0v-59A14.25,14.25,0,0,1,14.25,0Z" fill="#e8e8e8"/>
+      <circle cx="57.14" cy="36.62" r="15.54" fill="#e74c3c"/>
+      <circle cx="106.81" cy="36.62" r="15.54" fill="#f1c40f"/>
+      <circle cx="156.49" cy="36.62" r="15.54" fill="#2ecc71"/>
+      <rect x="179.89" y="373.84" width="187.6" height="30.84" rx="6" ry="6" fill="#c1c1c1"/>
+      <rect x="388.04" y="375.13" width="141.34" height="30.84" rx="6" ry="6" fill="#c1c1c1"/>
+      <rect x="552.51" y="375.13" width="185.03" height="30.84" rx="6" ry="6" fill="#c1c1c1"/>
+      <path d="M554.62,179.71a10.33,10.33,0,0,0-14.62,0l-91.35,91.35L400.56,223a10.34,10.34,0,0,0-14.63,14.63l55.4,55.4A10.34,10.34,0,0,0,456,293l98.66-98.66A10.34,10.34,0,0,0,554.62,179.71Z" fill="#2ecc71"/>
+    </g>
+  </g>
+</svg>

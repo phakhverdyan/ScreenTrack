@@ -1,0 +1,41 @@
+<div class="popover is-project-task-members">
+	<div class="popover-header">
+		<div class="popover-header__title"><%= title %></div>
+		<button type="button" class="[ popover-header__close-button ] btn">&times;</button>
+	</div>
+	<div class="popover-content + has-footer">
+		<select class="[ popover-member-select ] custom-select is-static"></select>
+		<div class="[ popover__no-members-message ] d-none">
+			<%= __('popovers.manage_project_task_members.looks_like_this_person_is_not_a_member_of_this_project') %>
+			<% if ([ 'OWNER', 'ADMINISTRATOR' ].indexOf(project.pivot.role) > -1) { %>
+				<%= __('popovers.manage_project_task_members.first_please_invite_him') %>
+			<% } %>
+		</div>
+		<form class="[ popover__invitation-form ] d-none">
+			<div class="form-group mb-2">
+				<div class="form-row">
+					<div class="col">
+						<label for="popover__invitation-form__first-name" class="mb-1 small">
+							{{ __('popovers/manage_project_task_members.first_name') }}
+						</label>
+						<input type="text" name="user[first_name]" class="form-control + is-first-capitalized" placeholder="{{ __('popovers/manage_project_task_members.first_name') }}" data-name="user.first_name" id="popover__invitation-form__first-name">
+						<div class="invalid-feedback"></div>
+					</div>
+					<div class="col">
+						<label for="popover__invitation-form__last-name" class="mb-1 small">
+							{{ __('popovers/manage_project_task_members.last_name') }}
+						</label>
+						<input type="text" name="user[last_name]" class="form-control + is-first-capitalized" placeholder="{{ __('popovers/manage_project_task_members.last_name') }}" data-name="user.last_name" id="popover__invitation-form__last-name">
+						<div class="invalid-feedback"></div>
+					</div>
+				</div>
+				<!-- CREDIT CARD -->
+				<!-- SALARY -->
+			</div>
+			<div class="form-group mb-0">
+				<button type="submit" class="btn btn-primary">{{ __('popovers/manage_project_task_members.add_to_task') }}</button>
+			</div>
+			<input type="hidden" name="user[email]">
+		</form>
+	</div>
+</div>

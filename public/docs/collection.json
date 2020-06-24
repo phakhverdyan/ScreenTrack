@@ -1,0 +1,3551 @@
+{
+    "variables": [],
+    "info": {
+        "name": "Laravel API",
+        "_postman_id": "3e0ca012-698a-4088-8805-be2be3c73379",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.0.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Authorization",
+            "description": "\nClass AuthController",
+            "item": [
+                {
+                    "name": "api\/register",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/register",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/is_user_registered",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/is_user_registered",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Login\nLogin in User's account",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/login",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"user\": {\n        \"email\": \"accusantium\",\n        \"password\": \"consequuntur\"\n    }\n}"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/reset_password",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/reset_password",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/reset_password\/{password_reset_token}",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/reset_password\/:password_reset_token",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "general",
+            "description": "",
+            "item": [
+                {
+                    "name": "api\/sign_up\/choose_a_plan",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/sign_up\/choose_a_plan",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/sign_up\/set_account_details",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/sign_up\/set_account_details",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/sign_up\/choose_addons",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/sign_up\/choose_addons",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/sign_up\/start_trial",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/sign_up\/start_trial",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/sign_up\/after_interview",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/sign_up\/after_interview",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/setup\/create_contact_lists",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/setup\/create_contact_lists",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/setup\/create_projects",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/setup\/create_projects",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/setup\/add_contacts",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/setup\/add_contacts",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/users\/autocomplete",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/users\/autocomplete",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/users\/invite",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/users\/invite",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/users\/{user_id}",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/users\/:user_id",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/users\/{user_id}\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/users\/:user_id\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/users\/{user_id}\/change_password",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/users\/:user_id\/change_password",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/users\/{user_id}\/image\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/users\/:user_id\/image\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/users\/{user_id}\/projects",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/users\/:user_id\/projects",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/users\/{user_id}\/chats",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/users\/:user_id\/chats",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/users\/{user_id}\/message",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/users\/:user_id\/message",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/users\/{user_id}\/tracking_segments",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/users\/:user_id\/tracking_segments",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/users\/{user_id}\/open_contract",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/users\/:user_id\/open_contract",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/user_specialized_profile\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/user_specialized_profile\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/user_specialized_profile\/{specialized_profile_id}\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/user_specialized_profile\/:specialized_profile_id\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/user_specialized_profile\/{specialized_profile_id}\/delete",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/user_specialized_profile\/:specialized_profile_id\/delete",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/tips\/skip_all",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/tips\/skip_all",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/tips\/{tip_id}\/got_it",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/tips\/:tip_id\/got_it",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/contacts",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/contacts",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/contacts\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/contacts\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/contacts\/{contact_id}\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/contacts\/:contact_id\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/contacts\/{contact_id}\/delete",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/contacts\/:contact_id\/delete",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/contact_lists",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/contact_lists",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/contact_lists\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/contact_lists\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/contact_lists\/{contact_list_id}",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/contact_lists\/:contact_list_id",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/contact_lists\/{contact_list_id}\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/contact_lists\/:contact_list_id\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/contact_lists\/{contact_list_id}\/delete",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/contact_lists\/:contact_list_id\/delete",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/contracts\/{contract_id}\/close",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/contracts\/:contract_id\/close",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/contracts\/{contract_id}\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/contracts\/:contract_id\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/contracts\/{contract_id}\/milestones\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/contracts\/:contract_id\/milestones\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/milestones\/{milestone_id}\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/milestones\/:milestone_id\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/milestones\/{milestone_id}\/activate",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/milestones\/:milestone_id\/activate",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/milestones\/{milestone_id}\/release",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/milestones\/:milestone_id\/release",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/companies\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/companies\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/companies\/{company_id}\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/companies\/:company_id\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/companies\/{company_id}\/delete",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/companies\/:company_id\/delete",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/company_images\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/company_images\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/company_images\/{image_key}\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/company_images\/:image_key\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/projects\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/projects\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/projects\/{project_id}",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/projects\/:project_id",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/projects\/{project_id}\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/projects\/:project_id\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/projects\/{project_id}\/delete",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/projects\/:project_id\/delete",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/projects\/{project_id}\/members",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/projects\/:project_id\/members",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/projects\/{project_id}\/invite_member",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/projects\/:project_id\/invite_member",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/projects\/{project_id}\/leave",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/projects\/:project_id\/leave",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/projects\/{project_id}\/close",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/projects\/:project_id\/close",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/projects\/{project_id}\/boards\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/projects\/:project_id\/boards\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/projects\/interviews\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/projects\/interviews\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/projects\/interviews\/{interview_id}\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/projects\/interviews\/:interview_id\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/projects\/interviews\/{interview_id}\/delete",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/projects\/interviews\/:interview_id\/delete",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/projects\/interviews\/{interview_id}\/questions\/update_positions",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/projects\/interviews\/:interview_id\/questions\/update_positions",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/projects\/interviews\/questions\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/projects\/interviews\/questions\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/projects\/interviews\/questions\/{question_id}\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/projects\/interviews\/questions\/:question_id\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/projects\/interviews\/questions\/{question_id}\/delete",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/projects\/interviews\/questions\/:question_id\/delete",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/project_members\/{member_id}\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/project_members\/:member_id\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/project_members\/{member_id}\/delete",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/project_members\/:member_id\/delete",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/project_boards\/{project_board_id}",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/project_boards\/:project_board_id",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/project_boards\/{project_board_id}\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/project_boards\/:project_board_id\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/project_boards\/{project_board_id}\/archive",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/project_boards\/:project_board_id\/archive",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/project_boards\/{project_board_id}\/member_users\/{project_task_member_user_id}\/add",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/project_boards\/:project_board_id\/member_users\/:project_task_member_user_id\/add",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/project_boards\/{project_board_id}\/member_users\/{project_task_member_user_id}\/remove",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/project_boards\/:project_board_id\/member_users\/:project_task_member_user_id\/remove",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/project_boards\/{project_board_id}\/lists",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/project_boards\/:project_board_id\/lists",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/project_boards\/{project_board_id}\/lists\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/project_boards\/:project_board_id\/lists\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/project_lists\/{project_list_id}\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/project_lists\/:project_list_id\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/project_lists\/{project_list_id}\/archive",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/project_lists\/:project_list_id\/archive",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/project_lists\/{project_list_id}\/tasks\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/project_lists\/:project_list_id\/tasks\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/project_tasks\/{project_task_id}\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/project_tasks\/:project_task_id\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/project_tasks\/{project_task_id}\/archive",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/project_tasks\/:project_task_id\/archive",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/project_tasks\/{project_task_id}\/member_users\/{project_task_member_user_id}\/add",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/project_tasks\/:project_task_id\/member_users\/:project_task_member_user_id\/add",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/project_tasks\/{project_task_id}\/member_users\/{project_task_member_user_id}\/remove",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/project_tasks\/:project_task_id\/member_users\/:project_task_member_user_id\/remove",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/project_tasks\/{project_task_id}\/attachments\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/project_tasks\/:project_task_id\/attachments\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/tracking_segments\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/tracking_segments\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/tracking_screenshots\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/tracking_screenshots\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/tracking_commands\/require",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/tracking_commands\/require",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/tracking_commands\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/tracking_commands\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/billing\/cards\/add",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/billing\/cards\/add",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/billing\/cards\/{card_id}\/delete",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/billing\/cards\/:card_id\/delete",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/billing\/cards\/{card_id}\/make_primary",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/billing\/cards\/:card_id\/make_primary",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/payout_methods\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/payout_methods\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/payout_methods\/{payout_method_id}\/make_default",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/payout_methods\/:payout_method_id\/make_default",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/payout_methods\/{payout_method_id}\/delete",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/payout_methods\/:payout_method_id\/delete",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/payouts\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/payouts\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/payouts\/{payout_id}\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/payouts\/:payout_id\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/chats\/{chat_id}",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/chats\/:chat_id",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/chats\/{chat_id}\/messages",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/chats\/:chat_id\/messages",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/chats\/{chat_id}\/messages\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/chats\/:chat_id\/messages\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/chat_messages\/{message_id}",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/chat_messages\/:message_id",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/chat_message_attachments\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/chat_message_attachments\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/countries\/autocomplete",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/countries\/autocomplete",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/localities\/autocomplete",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/localities\/autocomplete",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/waiters\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/waiters\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/interview_result\/link_with_user",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/interview_result\/link_with_user",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/interview_result\/{interview_hash}\/answers",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/interview_result\/:interview_hash\/answers",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/help_center_articles",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/help_center_articles",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/help_center_articles\/vote_yes",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/help_center_articles\/vote_yes",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/help_center_articles\/vote_no",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/help_center_articles\/vote_no",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/help_center_articles\/viewed",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/help_center_articles\/viewed",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/help_center_articles\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/help_center_articles\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/help_center_articles\/{article_id}\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/help_center_articles\/:article_id\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/help_center_articles\/{article_id}\/delete",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/help_center_articles\/:article_id\/delete",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/contact_us\/send_message",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/contact_us\/send_message",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/blog_articles",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/blog_articles",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/blog_articles\/vote_yes",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/blog_articles\/vote_yes",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/blog_articles\/vote_no",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/blog_articles\/vote_no",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/blog_articles\/viewed",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/blog_articles\/viewed",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/blog_articles\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/blog_articles\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/blog_articles\/{article_id}\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/blog_articles\/:article_id\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/blog_articles\/{article_id}\/delete",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/blog_articles\/:article_id\/delete",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/administrators\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/administrators\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/administrators\/{administrator_id}\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/administrators\/:administrator_id\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/administrators\/{administrator_id}\/delete",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/administrators\/:administrator_id\/delete",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/coupons\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/coupons\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/coupons\/{coupon_id}\/update",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/coupons\/:coupon_id\/update",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/coupons\/{coupon_id}\/delete",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/coupons\/:coupon_id\/delete",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "api\/user_feedback\/create",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "loc.screentrack.com",
+                            "path": "api\/user_feedback\/create",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        }
+    ]
+}

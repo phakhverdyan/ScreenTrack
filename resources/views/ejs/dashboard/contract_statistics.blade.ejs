@@ -1,0 +1,53 @@
+<div class="row">
+	<div class="[ contract-statistics__separated-column ] col d-flex justify-content-center">
+		<div class="d-inline-block p-4">
+			<div class="d-inline-flex align-items-center h5 mb-3">
+				<span>Budget</span>
+			</div>
+			<div class="h3 mb-0">$<%- number_format(budget_amount, 2) %></div>
+		</div>
+	</div>
+	<div class="col d-flex justify-content-center">
+		<div class="d-inline-block p-4">
+			<div class="d-inline-flex align-items-center h5 mb-3">
+				<span class="badge badge-primary mr-2"></span>
+				<span>Remaining</span>
+			</div>
+			<div class="h3 mb-0">
+				$<%- number_format(remaining_amount, 2) %>
+			</div>
+		</div>
+	</div>
+	<div class="col d-flex justify-content-center">
+		<div class="d-inline-block p-4">
+			<div class="d-inline-flex align-items-center h5 mb-3">
+				<span class="badge badge-secondary mr-2"></span>
+				<span>Escrow</span>
+			</div>
+			<div class="h3 mb-0">
+				$<%- number_format(escrow_amount, 2) %>
+			</div>
+		</div>
+	</div>
+	<div class="col d-flex justify-content-center">
+		<div class="d-inline-block p-4">
+			<div class="d-inline-flex align-items-center h5 mb-3">
+				<span class="badge badge-success mr-2"></span>
+				<span>Paid</span>
+			</div>
+			<div class="h3 mb-0">
+				$<%- number_format(paid_amount, 2) %>
+			</div>
+		</div>
+	</div>
+	{{-- // disabled until bonus system is created :)
+		<div class="col d-flex justify-content-center">
+			<div class="d-inline-block p-4">
+				<div class="d-inline-flex align-items-center h5 mb-3">
+					<span>Total Earnings</span>
+				</div>
+				<div class="h3 mb-0">$150.00</div>
+			</div>
+		</div>
+	--}}
+</div>

@@ -1,0 +1,36 @@
+<% if (milestone) { %>
+	<div class="row">
+		<div class="col py-3">
+			<div class="font-weight-bold mb-1">
+				Current Milestone
+			</div>
+			<div class="h5 mb-1">#<%= (milestone_index + 1) %> <%= milestone.title %> (<%- Math.round(percentage * 100.0) %>%)</div>
+			<div>
+				Amount: $<%= number_format(milestone.amount, 2) %>
+				<% if (!milestone.payment_id) { %>
+					(waiting for activation)
+				<% } else if (!milestone.released_at) { %>
+					(waiting for release)
+				<% } %>
+			</div>
+			<div>
+				Project: <a href="/dashboard/projects/<%- milestone.project.id %>">
+					<%= milestone.project.name %>
+				</a>
+			</div>
+		</div>
+		@if ($contract->employer_user_id == auth()->user()->id)
+			<div class="col py-3 d-flex justify-content-end align-items-center" style="max-width: 250px;">
+				<% if (!milestone.payment_id) { %>
+					<button class="[ contract-current-milestone__activate-button ] btn btn-primary">
+						Fund & Activate <b>$<%= number_format(milestone.amount, 2) %></b>
+					</button>
+				<% } else if (!milestone.released_at) { %>
+					<button class="[ contract-current-milestone__release-button ] btn btn-primary">
+						Release <b>$<%= number_format(milestone.amount, 2) %></b>
+					</button>
+				<% } %>
+			</div>
+		@endif
+	</div>
+<% } %>

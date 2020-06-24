@@ -1,0 +1,30 @@
+<form class="modal fade"  data-background="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<button type="button" class="[ modal__close-button ] btn" data-dismiss="modal">&times;</button>
+			<div class="modal-body">
+				<div class="form">
+					<p class="text-center">
+						Are you sure you want to close this contract?
+					</p>
+					<% if (auth.user.id == contract.employer_user_id) { %>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input" id="modal__remove-from-all-projects-checkbox" name="remove_user_from_all_my_projects" value="1">
+							<label class="form-check-label" for="modal__remove-from-all-projects-checkbox">
+								Also remove this user from all my projects
+							</label>
+						</div>
+					<% } %>
+					<p class="text-right mb-0">
+						<button type="button" class="[ modal__cancel-button ] btn btn-default" data-dismiss="modal">
+							{{ __('modals/close_contract.cancel') }}
+						</button>
+						<button type="submit" class="[ modal__confirm-button ] btn btn-primary">
+							{{ __('modals/close_contract.confirm') }}
+						</button>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

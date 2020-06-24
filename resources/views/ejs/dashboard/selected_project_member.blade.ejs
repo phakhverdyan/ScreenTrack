@@ -1,0 +1,4 @@
+<a href="#" class="[ selected-project-member ]" title="<%= member.user.title %>">
+	<img src="<%= member.user.image.urls.tiny %>" alt="">
+	<span class="[ selected-project-member__status ] + <%- member.user.is_online ? 'is-online' : '' %>" data-connection-status-for-user-id="<%= member.user.id %>"></span>
+</a>

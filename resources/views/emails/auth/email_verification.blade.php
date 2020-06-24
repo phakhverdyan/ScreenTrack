@@ -1,0 +1,1 @@
+<a href="{{ url('/') }}/verify_email/{{ $token }}">verify email</a>

@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /en/download-app
+Disallow: /en/download-app-for-windows
+Disallow: /en/download-app-for-mac-os
+Disallow: /logout
+Disallow: /help-center
+Disallow: /dashboard
+Disallow: /blog
+Disallow: /see-you-soon

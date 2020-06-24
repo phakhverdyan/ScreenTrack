@@ -1,0 +1,91 @@
+body {
+  font-family: "Gudea", sans-serif;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.complete-interview {
+  padding: 40px 0;
+}
+
+.complete-interview__form {
+  border-right: 1px solid #f3f3f3;
+  padding-right: 20px;
+  height: 100%;
+}
+
+.complete-interview__form p {
+  text-align: center;
+}
+
+.complete-interview__form h4 {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.complete-interview__form .btn {
+  width: 100%;
+  background-color: #2979ff;
+  border-radius: 2px;
+  border: none;
+}
+
+.complete-interview__form .btn:hover {
+  background-color: #2962ff;
+}
+
+.complete-inteview__download-app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20px;
+}
+
+.complete-inteview__download-app__info h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.complete-inteview__download-app__info span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+.complete-inteview__download-app__info span p {
+  font-size: 18px;
+}
+
+.complete-inteview__download-app__info span img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.complete-inteview__download-app__info .btn {
+  background-color: #2979ff;
+  border-radius: 2px;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 30px;
+}
+
+.complete-inteview__download-app__info .btn:hover {
+  background-color: #2962ff;
+}
+
+.complete-inteview__download-app__image {
+  width: 50%;
+}
+
+.complete-inteview__download-app__image img {
+  width: 100%;
+}

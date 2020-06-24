@@ -1,0 +1,18 @@
+<div class="[ message-item ] + <%- item.is_written_by_me ? 'is-written-by-me' : '' %> <%- item.is_sending ? 'is-sending' : '' %> <%- message.is_read ? 'is-read' : '' %>" data-id="<%- message.id %>">
+	<div class="[ message-item-unread-block ]">
+		<div class="[ message-item-unread-block__text ]">Unread messages</div>
+	</div>
+	<div class="message-item__wrapper">
+		<div class="message-item__text">
+			<%= message.text %>
+		</div>
+		<div class="message-item__time">
+			<%= moment(message.created_at).fromNow() %>
+		</div>
+		<div class="message-item__last-read-users <%- message.last_read_members.length > 0 ? 'is-shown' : '' %>">
+			<% message.last_read_members.forEach(function(last_read_member) { %>
+				<img src="<%- last_read_member.user.image.urls.tiny %>" alt="" title="<%= last_read_member.user.title %> read this message <%= moment(last_read_member.last_read_at).fromNow() %>">
+			<% }); %>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,4 @@
+<a href="#" class="[ board-member ]" title="<%= member.user.title %>">
+    <img src="<%= member.user.image.urls.tiny %>" alt="">
+    <span class="[ board-member__status ] + <%- member.user.is_online ? 'is-online' : '' %>"></span>
+</a>

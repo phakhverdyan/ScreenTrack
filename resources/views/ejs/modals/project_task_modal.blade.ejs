@@ -1,0 +1,46 @@
+<form class="modal fade + is-project-task" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<button type="button" class="[ modal__close-button ] btn" data-dismiss="modal">&times;</button>
+			<div class="modal-header">
+				<textarea class="[ modal-header__title ] form-control" spellcheck="false"><%= project_task.title %></textarea>
+			</div>
+			<div class="modal-body">
+				<div class="modal-main">
+					<div class="modal-section + is-description-form">
+						<div class="modal-section-title">{{ __('modals/project_task.description') }}</div>
+						<div class="modal-section-content">
+							<div class="modal-task-description">
+								<textarea class="[ modal-task-description__textarea ] form-control"
+										  placeholder="{{ __('modals/project_task.add_description') }}"
+										  spellcheck="false"><%= project_task.description %></textarea>
+								<div class="[ modal-task-description__buttons ]">
+									<button type="button" class="[ modal-task-description__save-button ] btn btn-primary">{{ __('modals/project_task.save') }}</button>
+									<button type="button" class="[ modal-task-description__close-button ] btn">×</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-section + is-attachments mt-3 <%- (project_task.attachments.length > 0 ? '' : 'd-none') %>">
+						<div class="modal-section-title">{{ __('modals/project_task.attachments') }}</div>
+						<div class="modal-section-content">
+							<% project_task.attachments.forEach(function(attachment) { %>
+								<a class="modal-task-attachment" href="<%- attachment.url %>" target="_blank">
+									<% if (attachment.is_image) { %>
+										<div class="modal-task-attachment__image" style="background-image: url('<%- attachment.thumbnails.middle.url %>');"></div>
+									<% } else { %>
+										<div class="modal-task-attachment__image"><%- attachment.extension %></div>
+									<% } %>
+									<div class="modal-task-attachment__title">
+										<%= attachment.title %>
+									</div>
+								</a>
+							<% }); %>
+						</div>
+					</div>
+				</div>
+				<div class="modal-sidebar"></div>
+			</div>
+		</div>
+	</div>
+</form>

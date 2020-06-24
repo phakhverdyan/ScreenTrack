@@ -1,0 +1,28 @@
+<?php
+
+return array (
+  'you_don_t_have_any_company_yet' => 'У вас еще нет компаний. Вы можете добавить вашу первую компанию.',
+  'add_company' => 'Добавить компанию',
+  'my_companies' => 'Мои компании',
+  'create_company' => 'Создать компанию',
+  'edit_company' => 'Редактирование компании',
+  'create' => 'Создать',
+  'save' => 'Сохранить',
+  'saved' => 'Сохранено!',
+  'cancel' => 'Отменить',
+  'ok' => 'OK',
+  'company_logo' => 'Логотип компании',
+  'change_logo' => 'Изменить логотип',
+  'upload_logo' => 'Загрузить логотип',
+  'choose_logo_from_pc' => 'Выбрать логотип с компьютера',
+  'company_don_t_have_logo_yet' => 'У компании еще нет логотипа',
+  'load_logo' => 'Загрузить логотип',
+  'choose_another_logo' => 'Выбрать другой логотип',
+  'company_name' => 'Название компании',
+  'company_website' => 'Сайт компании',
+  'location' => 'Местоположение',
+  'phone_number' => 'Номер телефона',
+  'company_description' => 'Описание компании',
+  'you_really_want_to_delete_this_company' => 'Вы действительно хотите УДАЛИТЬ эту компанию?',
+  'deleted' => 'Удалено!',
+);

@@ -1,0 +1,26 @@
+<?php
+
+return array (
+  'spendings' => 'Spendings',
+  'freelancer' => 'Freelancer',
+  'paid_on' => 'Paid on',
+  'progress' => 'Progress',
+  'review' => 'Review',
+  'escrow' => 'Escrow',
+  'available' => 'Available',
+  'paid' => 'Paid',
+  'get_paid' => 'Get Paid',
+  'date' => 'Date',
+  'client' => 'Client',
+  'project' => 'Project',
+  'hours' => 'Hours',
+  'rate' => 'Rate',
+  'amount' => 'Amount',
+  'available_on' => 'Available on',
+  'status' => 'Status',
+  'no_payouts_yet' => 'No payouts yet',
+  'no_work_in_progress' => 'No work in progress',
+  'no_work_in_escrow' => 'No work in escrow',
+  'no_work_in_review' => 'No work in review',
+  'no_work_in_paid' => 'No work in paid',
+);

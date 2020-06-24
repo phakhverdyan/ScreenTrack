@@ -1,0 +1,45 @@
+<tr class="user-profile-contract-item" data-id="<%- contract.id %>">
+	<td class="user-profile-contract-item__title">
+		<div><%= contract.title %></div>
+		<div class="user-profile-contract-item__period text-nowrap">
+			<%= moment(contract.created_at).format('MMM D, YYYY') %>
+			&ndash;
+			<%= contract.closed_at ? moment(contract.closed_at).format('MMM D, YYYY') : __('slideups.user_profile_contract.present') %>
+		</div>
+	</td>
+	<td class="user-profile-contract-item__direction text-center text-nowrap">
+		<img src="<%- contract.employer_user.image.urls.tiny %>" alt="" title="<%= contract.employer_user.title %>" style="width: 30px; height: 30px;">
+		<span class="mx-1">&rarr;</span>
+		<img src="<%- contract.employee_user.image.urls.tiny %>" alt="" title="<%= contract.employee_user.title %>" style="width: 30px; height: 30px;">
+	</td>
+	<td class="user-profile-contract-item__hourly-rate text-center">
+		<% if (contract.payment_type === 'ESCROW') { %>
+			$<%- contract.hourly_rate %>{{ __('slideups/user_profile_contract.per_hour') }}
+		<% } else { %>
+			&mdash;
+		<% } %>
+	</td>
+	<td class="text-center">
+		<%- time_interval_to_string(contract.count_of_segments * 60) %>
+	</td>
+	<td class="text-center">
+		<% if (contract.payment_type === 'ESCROW') { %>
+			$<%- number_format(contract.hourly_rate / 60 * contract.count_of_segments, 2) %>
+		<% } else { %>
+			&mdash;
+		<% } %>
+	</td>
+	<td class="user-profile-contract-item__state text-center">
+		<%- contract.closed_at ? __('slideups.user_profile_contract.closed') : __('slideups.user_profile_contract.active') %>
+	</td>
+	<td class="user-profile-contract-item__actions">
+		<% if (!contract.closed_at) { %>
+			<button class="btn btn-primary btn-sm mr-1 is-change <%- (auth.user.id == contract.employer_user_id ? '' : 'd-none') %> { d-none }">
+				{{ __('slideups/user_profile_contract.change') }}
+			</button>
+			<button class="btn btn-danger btn-sm is-close">
+				{{ __('slideups/user_profile_contract.close') }}
+			</button>
+		<% } %>
+	</td>
+</tr>

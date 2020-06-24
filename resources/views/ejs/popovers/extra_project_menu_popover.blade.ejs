@@ -1,0 +1,16 @@
+<div class="popover is-extra-project-menu">
+	<div class="popover-header">
+		<div class="popover-header__title">{{ __('dashboard/project_menu.project_menu') }}</div>
+		<button type="button" class="[ popover-header__close-button ] btn">&times;</button>
+	</div>
+	<div class="popover-content">
+		<div class="popover-list">
+			<% if (project.pivot.role != 'OWNER') { %>
+				<a href="#" class="popover-list-item + is-leave-project">{{ __('dashboard/project_menu.leave_project') }}</a>
+			<% } %>
+			<% if (project.pivot.role == 'OWNER') { %>
+				<a href="#" class="popover-list-item + is-close-project">{{ __('dashboard/project_menu.close_project') }}</a>
+			<% } %>
+		</div>
+	</div>
+</div>

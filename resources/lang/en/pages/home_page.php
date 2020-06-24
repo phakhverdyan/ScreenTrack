@@ -1,0 +1,28 @@
+<?php
+
+return array (
+  'free_employee_monitoring_software_with_screenshots' => 'Unlimited Time-Tracker with Screenshots & Activity Reports',
+  'this_email_has_already_been_taken' => 'This email has already been taken',
+  'must_be_a_valid_email_address' => 'Must be a valid email address',
+  'enter_your_email' => 'Enter your email',
+  'get_started' => 'Get Started',
+  'no_credit_card_required' => 'No Credit Card Required',
+  'no_strings_attached' => 'No strings attached',
+  'why_screen_track_rocks_audrey' => 'Why ScreenTrack rocks Audrey’s world?',
+  'zero_commission' => '0% commission',
+  'with_screen_track_audrey_pays_zero_commission' => 'With ScreenTrack, Audrey pays zero commission',
+  'learn_more' => 'Learn more',
+  'free_time_tracker_with_screenshots' => 'Free Time Tracker with 12 Screenshots per hour',
+  'she_enjoys_a_free_time_tracker' => 'She enjoys a free time tracker showing 12 screenshots per hour to her employer.',
+  'free_unlimited_projects_users_managers' => 'Free Unlimited Projects, Users & Managers',
+  'her_employer_can_add_her_to_unlimited_projects' => 'Her employer can add her to unlimited projects and invite unlimited users to work together.',
+  'kanban_project_management_with_live_messaging' => 'Kanban project management with Live Messaging',
+  'audrey_can_easily_use_the_task_kanban_tool' => 'Audrey can easily use the task kanban tool to organize tasks visually',
+  'premium_payment_protection' => 'Premium Payment Protection & Daily Payouts via Paypal / Payoneer',
+  'her_employer_rests_easy' => 'Her employer rests easy, knowing that she’s really working the promised hours and Audrey gets paid on a daily basis.',
+  '500_per_employer_referral' => '$150 per employer referral & $100 per freelancer referral',
+  'audrey_also_earns_by_inviting' => 'Audrey also earns by inviting her employers and lancer friends on ScreenTrack.',
+  '50_for_anyone_referred_by_your' => '$50 for anyone referred by your referrals',
+  'she_even_gets_paid_when_the_friends' => 'She even gets paid when the friends that she invited bring in their own friends.',
+  'testimonials' => 'Testimonials',
+);
